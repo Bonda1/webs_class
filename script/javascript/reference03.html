@@ -109,8 +109,60 @@
 </head>
 
 <body>
-    <h1>변수란?</h1>
-    <p></p>
+    <h1>변수에 저장할 수 있는 자료형</h1>
+    <p>변수에 저장할 수 있는 자료형(Data type)으로는 문자형(String), 숫자형(Number), 논리형(Boolean) 그리고 빈 데이터(Undefined)가 있습니다.
+        앞으로는 OO형 또는 OO형 데이터라고 부르겠습니다.
+    </p>
+
+    <h3>문자형</h3>
+    <p>문자형(String) 데이터는 다음과 같이 문자나 숫자를 큰따옴표("")또는 작은따옴표('')로 감싸고 있습니다.
+        또한 문자형 데이터에 HTML 태그를 포함하여 출력하면 태그로 인식합니다.
+        <br>기본형 ㅣ var 변수="사용할 문자나 숫자";
+        <br>var s="javascript";
+        <br>var num="100";
+        <br>var tag="h1(열기) String h1(닫기)";
+    </p>
+
+    <h3>숫자형</h3>
+    <p>숫자형(Number) 데이터는 단어 의미 그대로 숫자를 의미합니다. 만약 "100과" 같이 큰따옴표가 숫자를 감싸고
+        있다면 숫자가 아닌 문자형 데이터입니다. 이 경우에는 Number("100")를 이용하면 문자형 데이터를 숫자형 데이터로 바꿀 수 있습니다.
+        <br>기본형 ㅣ var 변수=숫자; 또는 Number("문자형 숫자");
+        <br>var s=100;
+        <br>var t=Number("500"); //"500" → 500
+    </p>
+
+    <h3>논리형</h3>
+    <p>논리형(Boolean) 데이터는 true(참) 또는 false(거짓)가 있습니다. 이 데이터는 주로 2개의 데이터를
+        비교할 때 나오는 결과입니다. 예를 들어'100보다 10이 크다'는 잘못된 비교이므로 false라는 결과를 반환하게 됩니다.
+        논리형 데이터의 기본형은 다음과 같습니다.
+        <br>기본형 ㅣ var 변수=ture or false; 또는 Boolean(데이터);
+        <br>var s=true;
+        <br>var t=10>=100; //false
+        <br> var k=Boolean("hello"); //true
+        <br>Boolean() 메서드에 데이터를 입력하면 논리형 데이터인 true 또는 false를 반환합니다. Boolean()
+        메서드는 숫자 0과 null, undefuned, 빈 문자("")를 제외한 모든 데이터에 대해 true를 반환합니다.
+        다음과 같이 Boolean() 메서드에 숫자 0을 입력하면 false라는 값을 반환합니다. 그리고 Boolean() 메서드에"홍길동"을 입력하면 true를 반환합니다.
+        <br>var m = Boolean(O) //false
+        <br>var k = Boolean("홍길동") //true
+        <br>다음은 논리형 값, 비교 연산자, Boolean 메서드를 사용해 변수에 논리형 데이터를 저장한 후 문서에 출력하는 예제와 결과 화면입니다.
+        <br><br>코딩해 보세요!
+        <br>06: script(여는태그)
+        <br>07: var a = true;
+        <br>08: var b = false;
+        <br>09: var c = 10>5; //true
+        <br>10: var d = Boolean(null); //false
+        <br>11:
+        <br>12: document.write(a, "br");
+        <br>13: document.write(b, "br");
+        <br>14: document.write(c, "br");
+        <br>15: document.write(d, "br"); [12~15는 데이터를 출력합니다.]
+        <br>16: script(닫는태그)
+        <br>결과 화면
+        <br>true(변수 a에 데이터 true가 저장됩니다.)
+        <br>false
+        <br> true
+        <br> false
+    </p>
 </body>
 
-</html></html>
+</html>
