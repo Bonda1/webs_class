@@ -106,11 +106,88 @@
             font-size: 24px;
         }
     </style>
+    <link rel="stylesheet" href="../assets/css/prism.css">
+    <script src="../assets/js/prism.js"></script>
+
 </head>
 
 <body>
-    <h1>변수란?</h1>
-    <p></p>
+    <h1>객체란?</h1>
+    <p>
+        자바스크립트는 객체(Object) 기반 언어입니다. 객체는 기능과 속성을 가지고 있습니다.
+        가령, TV에는 켜다, 끄다, 음을 소거하다, 볼륨을 높이다, 볼륨을 낮추다 등의 기능이 있습니다.
+        이렇듯 TV라는 객체에는 다양한 기능이 있습니다. 이러한 주변의 모든 사물들을 객체라고 합니다.
+        <br><br>자바스크립트 역시 다향한 객체가 있습니다. 우리는 앞에서 도큐먼트라는 객체를 사용해 보았고,
+        그 객체에 해당하는 출력 기능도 사용해 보았습니다. 자바스크립트에서는 이런 기능들을 메서드(Method)라고 합니다.
+        또한 객체는 속성(Property)을 가지고 있습니다. TV를 예로 들먄 TV의 크기나 색상 그리고 무게 등을 속성이라고 할 수 있죠.
+        <!-- sample -->
+        <div id="sample" class="sample">
+            <div class="code">
+                <pre class="line-numbers"><code class="language-js">
+                    메서드(Method)
+                     켜다();
+                     끄다();
+                     볼륨을 높이다();
+                     볼륨을 줄이다();
+                    속성(Property)
+                     너비;
+                     높이;
+                     색상;
+                     무게;
+                    객체의 메서드와 속성
+                </code></pre>
+            </div>
+        </div>
+        <!-- //sample -->
+        자바스크립트 객체의 메서드와 속성을 사용하는 기본형은 다음과 같습니다.
+        <!-- sample -->
+        <div id="sample" class="sample">
+            <div class="code">
+                <pre class="line-numbers"><code class="language-js">
+                    1. 객체.메서드();
+                    2. 객체.속성; 또는 3. 객체.속성=값;
+                    
+                    1. 객체의 메서드를 실행합니다.
+                    2. 객체의 속성값을 가져옵니다.
+                    3. 객체의 속성값을 바꿉니다.
+                </code></pre>
+            </div>
+        </div>
+        <!-- //sample -->
+        TV를 예로 들어 메서드와 속성의 사용 방법에 대해 살펴보겠습니다.
+        만일 자바스크립트에서 TV의기능(메서드)은 다음과 같이 사용해야 합니다.
+        <!-- sample -->
+        <div id="sample" class="sample">
+            <div class="code">
+                <pre class="line-numbers"><code class="language-js">
+                    TV.켜다(); 또는 TV.끄다();
+                </code></pre>
+            </div>
+        </div>
+        <!-- //sample -->
+        다음은 메서드를 잘못 사용한 경우입니다. '앞으로 전진해라는 메서드는 자동차에나 있을 법한 기능이겠죠.'
+        <!-- sample -->
+        <div id="sample" class="sample">
+            <div class="code">
+                <pre class="line-numbers"><code class="language-js">
+                    TV.앞으로 전진해();     (X)
+                    자동차.앞으로 전진해();  (O)
+                </code></pre>
+            </div>
+        </div>
+        <!-- //sample -->
+        또한 자바스크립트에서 TV의 너비와 색상, 속성 정보를 알고 싶다면 다음과 같이 적용할 수 있습니다.
+        <!-- sample -->
+        <div id="sample" class="sample">
+            <div class="code">
+                <pre class="line-numbers"><code class="language-js">
+                    TV.width; (tv의 너비) 또는 TV.color; (tv의 색상) //TV의 속성값을 가져옵니다.
+                    TV.color=black; //TV의 속성값을 바꿉니다.
+                </code></pre>
+            </div>
+        </div>
+        <!-- //sample -->
+    </p>
 </body>
 
-</html></html>
+</html>
