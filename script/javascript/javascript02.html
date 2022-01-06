@@ -175,9 +175,12 @@
         </div>
     </div>
     <!-- //sample1 -->
+
     <hr>
     <hr>
     <hr>
+
+
     <script src="../assets/js/prism.js"></script>
     <!-- Javascript -->
     <script>
@@ -191,6 +194,47 @@
             document.write(x, "<br>")
             document.write(y, "<br>")
             document.write(z, "<br>")
+        }
+
+        //02. 상수 : 데이터 불러오기
+        {
+            const x = 100;
+            const y = 200;
+            const z = "javascript";
+
+            document.write("<br>*** 02. 상수 ***<br>");
+            document.write(x, "<br>");
+            document.write(y, "<br>");
+            document.write(z, "<br>");
+        }
+
+        //03. 배열 : 데이터 불러오기
+        {
+            const arr = [100, 200, "javascript"];
+
+            document.write("<br> *** 03. 배열 ***<br>");
+            document.write(arr[0], "<br>");
+            document.write(arr[1], "<br>");
+            document.write(arr[2], "<br>");
+        }
+
+        //04. 배열 : 데이터 불러오기 : 2차 배열
+        {
+            const arr = [100, 200, ["javscript", "jquery"]];
+
+            document.write("<br>*** 03. 배열 ***<br>");
+            document.write(arr[0], "<br>")
+            document.write(arr[1], "<br>")
+            document.write(arr[2][0], "<br>")
+            document.write(arr[2][1], "<br>")
+        }
+
+        //05. 배열 : 데이터 불러오기 : 갯수 구하기
+        {
+            const arr = [100, 200, "javascript"];
+
+            document.write("<br>*** 05. 배열 ***<br>");
+            document.write(arr.length);
         }
     </script>
 </body>
