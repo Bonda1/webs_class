@@ -276,32 +276,35 @@ a {
     }
 }
 
+/* 대입 연산자 예시 table용 */
+.ext {
+    padding-left: 20px;
+}
+
+.ext tr td {
+    padding: 0px 3px !important;
+    border: 1px solid #000;
+}
+
 /* table */
-table {
-    width: 100%;
-    border: 1px solid #aaa;
-    border-collapse: collapse;
+.doc table {
+    border-collapse:collapse;
+    border-spacing: 1px;
+    text-align: center;
+    line-height: 1.5;
+    margin: 0px 10px 20px 0px;
 }
-
-table caption {
-    text-indent: 10px;
+.doc table th {
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    color: #000;
+    background: #ccf1e2 ;
+    border: 1px solid #ccc;
 }
-
-table tr th {
-    border: 1px solid #aaa;
-    padding: 15px;
-    background: #f5f5f5;
-    font-weight: 500;
-}
-
-table tbody tr:hover {
-    background: #B4E5FF;
-    color: #fff;
-    cursor: grab;
-}
-
-table tbody tr td {
-    border: 1px solid #aaa;
-    padding: 15px;
-    font-weight: 300;
+.doc table td {
+    padding: 10px;
+    vertical-align: top;
+    border: 1px solid #ccc;
+    background: #fff;
 }
