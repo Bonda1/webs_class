@@ -226,10 +226,12 @@ a {
     border-radius: 10px;
 }
 .doc .code {
-    border: 1px solid #cdcdcd;
     padding: 20px 20px 15px 20px;
     border-radius: 10px;
     background: #f4f8fa;
+    overflow-x: scroll;
+    margin-bottom: 10px;
+    margin-top: 5px;
 }
 .doc strong {
     background: #c3eaff;
@@ -238,13 +240,15 @@ a {
     padding: 2px 5px 0px 5px;
     display: inline-block;
 }
-
-@media (max-width: 800px) {
+@media (max-width: 800px){
     .doc {
         font-size: 14px;
     }
-    .doc P {
-        font-size: 13px;
+    .doc h2 {
+        font-size: 18px;
+    }
+    .doc .line {
+        padding: 10px 10px 5px 10px;
     }
 }
 
