@@ -174,7 +174,7 @@
 
     //for(초기값, 조건식, 증감식)
     for( let i=0; i&lt;arr.length; i++ ){
-        document.write(arr[i], "&lt;br&gt;");
+        document.write(arr[i]);
     }
 }</code></pre>
                 </div>
@@ -200,12 +200,12 @@
 
     //for문
     for( let i=0; i&lt;num.length; i++ ){
-        document.write(num[i],"&lt;br&gt;");
+        document.write(num[i]);
     }
 
     //forEach()
     num.forEach(function(el){               //function(element) 써도 출력값은 동일
-        document.write(el, "&lt;br&gt;");
+        document.write(el);
     });     //함수(forEach) 안에 함수(function) 함수, 메서드 -> 콜백함수
 
     //forEach(element, index, array)
@@ -239,7 +239,7 @@
 <pre class="line-numbers"><code class="language-js">{
     const num = [100, 200, 300, 400, 500];
 
-    document.write("<br>*** 08. 배열 : 데이터 불러오기 ***<br>");
+    document.write("*** 08. 배열 : 데이터 불러오기 ***");
     for( let i of num ){
         document.write(i);
     }
@@ -262,7 +262,7 @@
     const num = [100, 200, 300, 400, 500];
             
 
-    document.write("<br>*** 09. 배열 : 데이터 불러오기 ***<br>");
+    document.write("*** 09. 배열 : 데이터 불러오기 ***");
             
     for( let i in num ){
         document.write(i);
@@ -290,7 +290,7 @@
 <pre class="line-numbers"><code class="language-js">{
     const num = [100, 200, 300, 400, 500];
 
-    document.write("<br>*** 10. 배열 : 데이터 불러오기 ***<br>");
+    document.write("*** 10. 배열 : 데이터 불러오기 ***");
 
     //map()
     num.map(function(el){
@@ -421,9 +421,9 @@
         c: "javacsript"
     }
 
-    document.write(Object.keys(obj), "<br>");       //여기줄 포함 이 밑으로 거의 안씀 (죽은문법이기 때문에)
-    document.write(Object.values(obj), "<br>");
-    document.write(Object.entries(obj), "<br>");
+    document.write(Object.keys(obj));       //여기줄 포함 이 밑으로 거의 안씀 (죽은문법이기 때문에)
+    document.write(Object.values(obj));
+    document.write(Object.entries(obj));
 }</code></pre>
                 </div>
                 <div class="result">
