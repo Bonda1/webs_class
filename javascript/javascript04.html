@@ -316,6 +316,57 @@
                 </div>
             </div>
             <!-- //sample10 -->
+
+            <!-- sample11 -->
+            <div id="sample11" class="sample">
+                <h3>11. breack문</h3>
+                <div class="code">
+<pre class="line-numbers"><code class="language-js">{
+    //while문을 이용해서 0~20까지 출력하시오!
+    let num = 0;
+    while(num &lt;= 20){
+        document.write(num);
+        if(num == 10){
+            break;
+        }
+        num++;
+    }
+    //for문을 이용해서 0~20까지 출력하시오!
+    for(let i=1; i&lt;=20; i++){
+        document.write(i);
+        if(i == 10){
+            break;
+        }
+    }
+}</code></pre>
+                </div>
+                <div class="result">
+                    <h4>결과보기</h4>
+                    <div class="result11">
+                       012345678910<br>
+                       012345678910
+                    </div>
+                </div>
+            </div>
+            <!-- //sample11 -->
+
+            <!-- sample12 -->
+            <div id="sample12" class="sample">
+                <h3>12. continue문</h3>
+                <div class="code">
+<pre class="line-numbers"><code class="language-js">{
+    
+}</code></pre>
+                </div>
+                <div class="result">
+                    <h4>결과보기</h4>
+                    <div class="result12">
+                       1234678910<br>
+                       1234678910
+                    </div>
+                </div>
+            </div>
+            <!-- //sample12 -->
         </div>
         <!-- //script -->
 
@@ -443,13 +494,42 @@
             }
 
             //11. break문
-            //while문을 이용해서 0~20까지 출력하시오!
-            {
-                let num = 1;
-
+            {   
+                //while문을 이용해서 0~20까지 출력하시오!
+                let num = 0;
                 while(num <= 20){
-                    document.write( num + ". 실행되었습니다.");
+                    document.write(num);
+                    if(num == 10){
+                        break;
+                    }
                     num++;
+                }
+                //for문을 이용해서 0~20까지 출력하시오!
+                for(let i=0; i<=20; i++){
+                    document.write(i);
+                    if(i == 10){
+                        break;
+                    }
+                }
+            }
+
+            //12. continue문
+            {
+                //while문을 이용해서 1~10까지 출력
+                let num = 0;
+                while(num < 10){ //while(num <- 이조건식을 num대신 true를 넣어줄수있음)
+                    num++;
+                    if( num == 5){
+                        continue;
+                    }
+                    document.write(num);
+                }
+                // for문을 이용해서 1~10까지 출력
+                for(let i=1; i<=10; i++){
+                    if( i == 5){
+                        continue;
+                    }
+                    document.write(i);
                 }
             }
             </script>
