@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout01</title>
+    <title>Layout02</title>
     <style>
         * {
             margin: 0;
@@ -13,57 +13,69 @@
         }
 
         body {
-            background-color: #FFF3E0;
+            background: #EFF8EF;
         }
 
-        #container {
+        #contaier {
             width: 1200px;
-            height: 1080px;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 0 auto;
         }
 
         #header {
             width: 1200px;
             height: 100px;
-            background-color: #FAE1B7;
+            background-color: #c8e6c9;
         }
 
         #nav {
             width: 1200px;
             height: 100px;
-            background-color: #F7CE8B;
-        }
-
-        #aside {
-            width: 400px;
-            height: 780px;
-            background-color: #F4BA61;
-            float: left;
+            background-color: #a5d6a7;
         }
 
         #contents {
-            width: 800px;
-            height: 780px;
-            background-color: #F2AB47;
-            float: left;
+            width: 1200px;
         }
 
         #footer {
             width: 1200px;
             height: 100px;
-            background-color: #F19D38;
+            background-color: #43a047;
             clear: both;
+        }
+
+        #contents .left {
+            width: 300px;
+            height: 780px;
+            background-color: #81c784;
+            float: left;
+        }
+
+        #contents .center {
+            width: 600px;
+            height: 780px;
+            background-color: #66bb6a;
+            float: left;
+        }
+
+        #contents .right {
+            width: 300px;
+            height: 780px;
+            background-color: #4caf50;
+            float: left;
         }
     </style>
 </head>
 
 <body>
-    <div id="container">
+    <div id="contaier">
         <div id="header"></div>
         <div id="nav"></div>
-        <div id="aside"></div>
-        <div id="contents"></div>
+        <div id="contents">
+            <div class="left"></div>
+            <div class="center"></div>
+            <div class="right"></div>
+        </div>
         <div id="footer"></div>
     </div>
 </body>
