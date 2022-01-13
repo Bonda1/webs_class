@@ -45,16 +45,101 @@
             적용 예제1
             <div class="line">
                 var num=10;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;if(num<(500){ //true를 반환합니다.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;if(num&lt;(500){ //true를 반환합니다.<br>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.write("hello");<br>
                 }
             </div>
 
             <h4>조건식에 논리형 데이터가 아닌 다른 형이 오는 경우(p63)</h4>
-
+            <p>조건식에 논리형 데이터(true, false)가 아닌 다른 형의 데이터가 입력되어도 true 또는 false로 인식 됩니다.</p>
+            
+            조건식이 출력되는경우
+            <div class="line">
+                var num=3;<br>
+                if(num){ //3은 true입니다.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;document.write(num);<br>
+                }
+            </div>
+            
+            출력되지 않는 경우
+            <div class="line">
+                var num=0;<br>
+                if(num){ //0은 false입니다.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;document.write(num);<br>
+                }
+            </div>
+            
             <h3>else 문</h3>
-            <h3>if else문</h3>
+            <p>else 문은 조건식을 만족할(true) 경우와 만족하지 않을(false) 경우에 따라 실행되는 코드가 달라집니다. 즉, 두 가지 결과가 나올 수 있습니다.</p>
+            기본형
+            <div class="line">
+                if(조건식){<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;자바스크립트 코드1;<br>
+                }else{<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;자바스크립트 코드2;<br>    
+                }
+            </div>
+            예제
+            <div class="code">
+<pre><code>&lt;script&gt;
+    if(true){
+        document.write("실행되었습니다.(true)"); //if(true)에 (true)가 들어갔으니 조건 성립 1. 실행되었습니다.가 출력.
+    } else {
+        document.write("실행되었습니다.(false)"); //if(true)에 (false)가 들어가면 조건 성립 else 에 2. 실행되었습니다.가 출력.
+    }
+&lt;/script&gt;
+</pre></code>
+            </div>
+
+            <h3>else if문</h3>
+            <p>else if문은 두 가지 이상의 조건식과 정해 높은 조건을 만족하지 않았을 때 실행되는 코드로 이루어져 있습니다.</p>
+            기본형
+            <div class="code">
+<pre><code>if(조건식1){
+    코드1;
+}else if(조건식2){
+    코드2;
+}else if(조건식3)
+    코드3;
+}else if(조건식3)
+    코드4;
+}else if(조건식3)
+    코드5;
+}else if(조건식3)
+    코드6;
+}
+</pre></code>
+            </div>
             <h3>중첩 if문</h3>
+            <p>조건문 안에 조건문이 있으면 중첩if문이라고 합니다.</p>
+            기본형
+            <div class="code">
+<pre><code>if(조건식1){
+    if(조건식2){
+        자바스크립트 코드;
+    }
+}
+</pre></code>
+            </div>
+            예제
+            <div class="code">
+<pre><code>{
+    const num = 100;
+
+    if(num == 100){
+        document.write("실행되었습니다(1)");
+        if(num ==100){
+            document.write("실행되었습니다(2)");
+            if(num ==100){
+                document.write("실행되었습니다(3)");
+            }
+        }
+    } else {
+        document.write("실행되었습니다.(4)");
+    }
+}</pre></code>
+            </div>
+
         </div>
     </main>
 
