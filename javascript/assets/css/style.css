@@ -35,6 +35,14 @@
 }
 
 /* reset */
+:root {
+    font-size: 16px;
+}
+@media (max-width: 800px){
+    :root {
+        font-size: 14px;
+    }
+}
 * {
     margin: 0;
     padding: 0;
@@ -405,6 +413,22 @@ a {
         font-size: 55px;
         padding: 10px 0;
     }
+}
+
+/* test */
+.test {
+    max-width: 1000px;
+    width: 100%;
+    margin: 100px auto;
+}
+.test h2 {
+    font-size: 3rem;    /* 3rem = 48px(16px*3) */
+    font-weight: 500;
+    margin-bottom: .5em;    /* 0.3em의 0은 생략가능 */
+}
+.test p {
+    font-size: 1.2rem;
+    margin-bottom: 1em;
 }
 
 /* 간격 설정 */
