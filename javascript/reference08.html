@@ -77,9 +77,25 @@
     &lt;/script&gt;
 </pre></code>
             </div>
-            <h3>익명 함수(이건 인터넷검색)</h3>
-            <p>문법</p>
-            <p>설명</p>
+            <h3>익명 함수</h3>
+            <p>자바스크립트의 익명 함수는 변수에 함수의 코드를 저장하는 대신 함수명을 사용하지 않습니다.
+                대신 변수명을 마치 함수명처럼 사용해서 함수를 호출하거나 변수값을 이동시키는데 사용할 수 있습니다.
+            </p>
+
+            <p class="mt20">아래 예제는 hello라는 변수명에 "Hello World!"라는 문자가 출력되는 함수 코드를 저장했습니다. hello()로 익명 함수를 호출하면, 소스코드가 실행됩니다.</p>
+            <div class="code">
+<pre><code>&lt;script&gt;
+    //익명 함수 선언 및 변수에 대입
+    var hello = function()
+    {
+        document.write("Hello World!");
+    };
+
+    //익명 함수 변수명으로 호출
+    hello();
+&lt;/script&gt;
+</pre></code>
+            </div>
 
             <h3>매개변수 함수</h3>
             <p>문법</p>
