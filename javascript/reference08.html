@@ -35,10 +35,22 @@
     <main id="main">
         <div class="doc">
             <h2>함수</h2>
-            <p>함수.....</p>
+            <p>우리는 앞에서 데이터를 저장할 때 변수를 선언하여 저장했습니다. 변수에는 데이터만 저장할 수 있고, 코드는 저장할 수 없습니다.
+                하지만 함수를 사용하면 코드를 메모리에 저장했다가 필요할 때마다 호출하여 사용할 수 있습니다.
+            </p>
 
             <h3>선언적 함수</h3>
-            <p>문법</p>
+            <p>함수를 사용하여 코드를 저장한 것을 '함수 정의문'이라고 합니다. 변수를 선언할 때 var 키워드를 사용한 것처럼 함수에서는
+                function 키워드를 사용해 변수를 선언합니다.
+            </p>
+            
+            <p class="mt20">함수 정의문은 다음과 같이 선언합니다.</p>
+            기본형
+            <div class="line">
+                function 함수명(){<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;자바스크립트 코드;<br>
+                }
+            </div>
             <p>설명</p>
 
             <h3>익명 함수(이건 인터넷검색)</h3>
@@ -50,9 +62,63 @@
             <p>설명</p>
 
             <h3>리턴값 함수</h3>
-            <p>문법</p>
-            <p>설명</p>
-            코드 1, 2
+            <p>return 문은 함수에서 결괏값을 반환할 때 사용합니다. 그리고 함수에서 return 문이 실행되면 반복문의 break 문과 비슷하게
+                코드가 강제로 종료됩니다. 다시 말해 함수 정의문에 retrun 문이 사용되면 함수를 호출했을 때 결괏값(data)을 반환합니다.
+            </p>
+            
+            <p class="mt20">다음은 return 문의 기본형입니다.</p>
+            <div class="code">
+<pre><code>function 함수명(){
+    
+    자바스크립트 코드1;         //자바스크립트 코드1; - 2
+    return 데이터(값);          //return 데이터(값); - 3
+
+    자바스크립트 코드2;
+}
+
+var 변수 = 함수명();           //함수명(); - 1
+
+//1 함수 호출문 → 2 함수 코드 실행 → 3 자바스크립트 코드2를 무시하고 데이터를 반환 → 1 함수 호출문 = 1에서 2로 2에서 3으로 3에서 1로 반복 되는 구조
+</pre></code>
+            </div>
+
+            <p class="mt50">다음의 기본 예제는 함수 호출과 함께 인자값 10, 20을 전달합니다. calc() 함수는 num1(10)과 num2(20)의 데이터를 더한 값인 30을 반환합니다.
+                반환된 값은 변수 result에 저장되어 화면에 출력 됩니다.
+            </p>
+            <div class="code">
+<pre><code>function sum(num1, num2) {
+    return num1 + num2;     //return num1 + num2; - 2+3
+}
+
+var result = sum(10,20);    //result = sum(10, 20); - 1
+document.write(result);
+
+//1 함수 호출문 → 2 함수 코드 실행 → 3 30 반환 → 1 함수 호출문 = 1에서 2로 2에서 3으로 3에서 1로 반복 되는 구조
+</pre></code>
+            </div>
+
+            <p class="mt50">다음은 함수 정의문 내에 작성한 코드를 실행한 후 계산된 결괏값을 return 문으로 함수
+                호출문에 반환하는 예제입니다.
+            </p>
+            <div class="code">
+<pre><code>&lt;script&gt;
+    function testAvg(arrData) {             //국어 - arrData[0], 영어 - arrData[1]  //arrData.length:2 //이 국어와 영어가 (arrData)에 들어감
+        var sum = 0;
+        for (var i = 0;i &lt; arrData.length; i++) {
+            sum + = Number(prompt(arrData[i] + "점수는?", "0"));        //배열에 저장된 데이터 개수(2)만큼 반복문을 실행합니다.
+        }
+
+        var avg = sum / arrData.length;         //평균 점수를 구해 반환합니다(바로 밑 라인까지 묶어서).
+        return avg;
+    }
+
+    var arrSubject = ["국어", "수학"];
+    var result = testAvg(arrSubject);
+
+    document.write("평균 점수는" + result + "점입니다");
+&lt;/script&gt;
+</pre></code>
+            </div>
         </div>
     </main>
 
