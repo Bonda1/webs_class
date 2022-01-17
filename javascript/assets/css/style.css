@@ -76,6 +76,13 @@ a {
     display: block;
 }
 
+/* back */
+.back {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+}
+
 /* header */
 #header {
     padding: 40px;
@@ -98,6 +105,14 @@ a {
     border-radius: 30px;
     display: inline-block;
     margin-bottom: 10px;
+}
+#header nav ul:nth-child(2) li a {
+    font-size: 14px;
+    padding: 8px 20px 6px 20px;
+}
+#header nav ul:nth-child(3) li a {
+    font-size: 14px;
+    padding: 8px 20px 6px 20px;
 }
 
 #header nav ul li.active a {
