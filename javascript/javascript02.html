@@ -88,9 +88,13 @@
     document.write(z);
 }</code></pre>
                 </div>
-                <div class="result">
+                <div class="result result01t">
                     <h4>결과보기</h4>
-                    <div class="result01"></div>
+                    <div class="result01">
+                        100<br>
+                        200<br>
+                        javascript
+                    </div>
                 </div>
             </div>
             <!-- //sample1 -->
@@ -107,9 +111,13 @@
     document.write(z);
 }</code></pre>
                 </div>
-                <div class="result">
+                <div class="result result02t">
                     <h4>결과보기</h4>
-                    <div class="result02"></div>
+                    <div class="result02">
+                        100<br>
+                        200<br>
+                        javascript
+                    </div>
                 </div>
             </div>
             <!-- //sample2 -->
@@ -126,9 +134,13 @@
     document.write(arr[2]);
 }</code></pre>
                 </div>
-                <div class="result">
+                <div class="result result03t">
                     <h4>결과보기</h4>
-                    <div class="result03"></div>
+                    <div class="result03">
+                        100<br>
+                        200<br>
+                        javascript
+                    </div>
                 </div>
             </div>
             <!-- //sample3 -->
@@ -147,9 +159,15 @@
     document.write(arr[2][1]);
 }</code></pre>
                 </div>
-                <div class="result">
+                <div class="result result04t">
                     <h4>결과보기</h4>
-                    <div class="result04"></div>
+                    <div class="result04">
+                        100<br>
+                        200<br>
+                        javascriptjquery<br>
+                        javascript<br>
+                        jquery
+                    </div>
                 </div>
             </div>
             <!-- //sample4 -->
@@ -164,9 +182,11 @@
     document.write(arr.length);
 }</code></pre>
                 </div>
-                <div class="result">
+                <div class="result result05t">
                     <h4>결과보기</h4>
-                    <div class="result05"></div>
+                    <div class="result05">
+                        3
+                    </div>
                 </div>
             </div>
             <!-- //sample5 -->
@@ -190,9 +210,13 @@
     }
 }</code></pre>
                 </div>
-                <div class="result">
+                <div class="result result06t">
                     <h4>결과보기</h4>
-                    <div class="result06"></div>
+                    <div class="result06">
+                        100<br>
+                        200<br>
+                        javascript
+                    </div>
                 </div>
             </div>
             <!-- //sample6 -->
@@ -228,7 +252,7 @@
     })
 }</code></pre>
                 </div>
-                <div class="result">
+                <div class="result result07t">
                     <h4>결과보기</h4>
                     <div class="result07">
                         100 200 300 400 500<br>
@@ -256,7 +280,7 @@
     }
 }</code></pre>
                 </div>
-                <div class="result">
+                <div class="result result08t">
                     <h4>결과보기</h4>
                     <div class="result08">
                         100 200 300 400 500
@@ -281,7 +305,7 @@
     }
 }</code></pre>
                 </div>
-                <div class="result">
+                <div class="result result09t">
                     <h4>결과보기</h4>
                     <div class="result09">
                         0 1 2 3 4<br>
@@ -311,7 +335,7 @@
     });
 }</code></pre>
                 </div>
-                <div class="result">
+                <div class="result result10t">
                     <h4>결과보기</h4>
                     <div class="result10">
                        100 200 300 400 500  //편의상 한칸씩 띄워줌 원래는 붙어서 결과 나옴<br>
@@ -347,7 +371,7 @@
     document.write(...num);
 }</code></pre>
                 </div>
-                <div class="result">
+                <div class="result result11t">
                     <h4>결과보기</h4>
                     <div class="result11">
                        100, 200, 300, 400, 500<br>
@@ -372,7 +396,7 @@
     document.write(c);
 }</code></pre>
                 </div>
-                <div class="result">
+                <div class="result result12t">
                     <h4>결과보기</h4>
                     <div class="result12">
                        100<br>
@@ -478,7 +502,7 @@
 
     <!-- script -->
     <script src="assets/js/script.js"></script>
-    
+
     <script>
         //result h4 클릭하면
 
@@ -490,7 +514,7 @@
                 y = 200,
                 z = "javascript";
 
-            document.querySelector(".result01").innerHTML = x + "<br>" + y + "<br>" + z;
+            // document.querySelector(".result01").innerHTML = x + "<br>" + y + "<br>" + z;
         }
 
         //02. 상수 : 데이터 불러오기
@@ -499,28 +523,28 @@
                   y = 200,
                   z = "javascript";
 
-            document.querySelector(".result02").innerHTML = x + "<br>" + y + "<br>" + z;
+            // document.querySelector(".result02").innerHTML = x + "<br>" + y + "<br>" + z;
         }
 
         //03. 배열 : 데이터 불러오기
         {
             const arr = [100, 200, "javascript"];
 
-            document.querySelector(".result03").innerHTML = arr[0] + "<br>" + arr[1] + "<br>" + arr[2];
+            // document.querySelector(".result03").innerHTML = arr[0] + "<br>" + arr[1] + "<br>" + arr[2];
         }
 
         //04. 배열 : 데이터 불러오기 : 2차 배열
         {
             const arr = [100, 200, ["javascript", "jquery"]];
 
-            document.querySelector(".result04").innerHTML = arr[0] + "<br>" + arr[1] + "<br>" + arr[2] + "<br>" + arr[2][0] + "<br>" + arr[2][1];
+            // document.querySelector(".result04").innerHTML = arr[0] + "<br>" + arr[1] + "<br>" + arr[2] + "<br>" + arr[2][0] + "<br>" + arr[2][1];
         }
 
         //05. 배열 : 데이터 불러오기 : 갯수 구하기
         {
             const arr = [100, 200, "javascript"];
 
-            document.querySelector(".result05").innerHTML = arr.length;
+            // document.querySelector(".result05").innerHTML = arr.length;
         }
 
         //06. 배열 : 데이터 불러오기 : for()문
