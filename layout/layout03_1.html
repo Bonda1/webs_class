@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout3_1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #E3F2FD;
+        }
+        #wrap {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        #header {
+            width: 1200px;
+            height: 100px;
+            background-color: #BBDEFB;
+        }
+        #nav {
+            width: 1200px;
+            display: flex;
+        }
+        #nav .article1{
+            width: 600px;
+            height: 100px;
+            background-color: #90CAF9;
+        }
+        #nav .article2 {
+            width: 600px;
+            height: 100px;
+            background-color: #7B8995;
+        }
+        #contents {
+            width: 1200px;
+        }
+        #contents .content {
+            width: 1200px;
+            display: flex;
+        }
+        #contents .content .article1{
+            width: 300px;
+            height: 520px;
+            background-color: #64B5F6;
+        }
+        #contents .content1 .article2{
+            width: 900px;
+            height: 260px;
+            background-color: #42A5F5;
+        }
+        #contents .content1 .article3{
+            width: 900px;
+            height: 260px;
+            background-color: #2196F3;
+        }
+        #contents .article4{
+            width: 1200px;
+            height: 260px;
+            background-color: #1E88E5;
+        }
+        #footer {
+            width: 1200px;
+            height: 100px;
+            background-color: #1976D2;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header"></header>
+        <nav id="nav">
+            <article class="article1"></article>
+            <article class="article2"></article>
+        </nav>
+        <section id="contents">
+            <div class="content">
+                <article class="article1"></article>
+                <div class="content1">
+                    <article class="article2"></article>
+                    <article class="article3"></article>
+                </div>
+            </div>
+            <article class="article4"></article>
+        </section>
+        <footer id="footer"></footer>
+    </div>
+</body>
+</html>

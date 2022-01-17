@@ -25,35 +25,212 @@
     </header>
 
     <main id="contents">
-        <h2><a href="html.html">HTML <em>웹표준/웹접근성/웹호환성</em></a></h2>
+        <h2><a href="html.html">HTML <em>시맨틱 태그</em></a></h2>
 
         <div class="menu">
             <ul>
                 <li><a href="html.html">속성</a></li>
                 <li><a href="htmlRefer01.html">기초 문법</a></li>
-                <li class="active"><a href="htmlRefer02.html">웹표준/웹접근성/웹호환성</a></li>
+                <li><a href="htmlRefer02.html">웹표준/웹접근성/웹호환성</a></li>
+                <li class="active"><a href="htmlRefer03.html">시맨틱 태그</a></li>
             </ul>
         </div>
         <!-- //menu -->
 
         <div class="refer">
             <div class="doc">
-                <h3>시멘틱 태그</h3>
-                <p>개념 설명</p>
+                <h3>시맨틱 태그</h3>
+                <p>Semantic은 '의미의', '의미론적인'이라는 뜻을 가진 형용사이다. 따라서 시맨틱 태그란 의미가 있는 태그를 말한다.</p>
+                <p>&lt;div&gt;나 &lt;span&gt;과 같이 의미가 없는 태그는 태그 이름만 보고는 어떤 내용인지 전혀 유추할 수가 없는 반면, &lt;form&gt;, &lt;table&gt;, &lt;article&gt; 등 의미가 있는 태그는 내용을 명확하게 정의한다.</p>
 
                 <h3>종류</h3>
                 <div class="table">
                     <table>
                         <tbody>
-                            <th>&lt;section&gt;</th>
-                            <td>&lt;section&gt; 태그는 주제별 그룹의 콘텐츠 섹션을 나타낼 때 사용합니다.</td>
+                            <tr>
+                                <th>&lt;section&gt;</th>
+                                <td>&lt;section&gt; 태그는 주제별 그룹의 콘텐츠 섹션을 나타낼 때 사용합니다.</td>
+                            </tr>
+                            <tr>    
+                                <th>&lt;header&gt;</th>
+                                <td>&lt;header&gt; 태그는 소개 컨텐츠 및 네비게이션 링크를 포함한 섹션입니다.</td>
+                            </tr>
+                            <tr>    
+                                <th>&lt;nav&gt;</th>
+                                <td>&lt;nav&gt; 태그는 네비게이션 링크를 정의합니다.</td>
+                            </tr>
+                            <tr>    
+                                <th>&lt;article&gt;</th>
+                                <td>&lt;article&gt; 태그는 문서내에 독립적인 컨텐츠를 정의합니다.</td>
+                            </tr>
+                            <tr>    
+                                <th>&lt;footer&gt;</th>
+                                <td>&lt;footer&gt; 태그는 사이트 푸터부분을 정의합니다.</td>
+                            </tr>
+                            <tr>    
+                                <th>&lt;aside&gt;</th>
+                                <td>&lt;aside&gt; 태그는 문서내에 사이드 컨텐츠를 정의합니다.</td>
+                            </tr>
+                            <tr>    
+                                <th>&lt;main&gt;</th>
+                                <td>&lt;main&gt; 태그는 웹 문서의 주요 콘텐츠 영역을 설정합니다.</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
                 
                 <h3>HTML5에 없어진 태그</h3>
-                
+                <ul>
+					<li>acronym : 약어나 이니셜 표시
+						<ul>
+							<li>대체 수단 : abbr 요소 사용</li>
+						</ul>
+					</li>
+					<li>applet : 자바 애플릿 삽입
+						<ul>
+							<li>대체 수단 : embed / object 요소 사용</li>
+						</ul>
+					</li>
+					<li>basefont : 기본 폰트 지정
+						<ul>
+							<li>대체 수단 : CSS 사용</li>
+						</ul>
+					</li>
+					<li>big : 텍스트 사이즈를 크게 함
+						<ul>
+							<li>대체 수단 : CSS 사용</li>
+						</ul>
+					</li>
+					<li>center : 내용을 가운데 정렬함
+						<ul>
+							<li>대체 수단 : CSS 사용</li>
+						</ul>
+					</li>
+					<li>font : 폰트 지정
+						<ul>
+							<li>대체 수단 : CSS 사용</li>
+						</ul>
+					</li>
+					<li>s : 취소선
+						<ul>
+							<li>대체 수단 : CSS 사용</li>
+						</ul>
+					</li>
+					<li>spacer : 스페이스 삽입
+						<ul>
+							<li>대체 수단 : CSS 사용</li>
+						</ul>
+					</li>
+					<li>strike : 취소선
+						<ul>
+							<li>대체 수단 : CSS 사용</li>
+						</ul>
+					</li>
+					<li>tt : 글꼴을 같은 폭으로 표시
+						<ul>
+							<li>대체 수단 : CSS 사용</li>
+						</ul>
+					</li>
+					<li>frame : 프레임
+						<ul>
+							<li>대체 수단 : iframe과 CSS 이용하거나 서버 사이트로 컨텐츠 결합</li>
+						</ul>
+					</li>
+					<li>frameset : 프레임 세트
+						<ul>
+							<li>대체 수단 : iframe과 CSS를 이용하거나 서버 사이드 컨텐츠 결합</li>
+						</ul>
+					</li>
+					<li>noframes : 프레임에 대응하지 않는 브라우저를 위한 컨텐츠
+						<ul>
+							<li>대체 수단 : iframe과 CSS를 이용하거나 서버 사이드로 컨텐츠 결합</li>
+						</ul>
+					</li>
+					<li>isindex : 서버로 송신하는 텍스트 입력란
+						<ul>
+							<li>대체 수단 : form과 텍스트 필드의 조합</li>
+						</ul>
+					</li>
+					<li>listing, xmp : 내용 그대로 출력
+						<ul>
+							<li>대체 수단 : pre 요소나 code 요소를 사용</li>
+						</ul>
+					</li>
+					<li>noembed : embed를 사용할 수 없을 때 대체 요소
+						<ul>
+							<li>대체 수단 : 폴백이 필요하다면 object 요소 사용</li>
+						</ul>
+					</li>
+					<li>plaintext : 내용 그대로 출력
+						<ul>
+							<li>대체 수단 : MIME 타입 “text/plain”을 사용</li>
+						</ul>
+					</li>
+					<li>rb : 루비 대상 문자열을 지정
+						<ul>
+							<li>대체 수단 : 루비 대상 문자열은 ruby 요소 안에 직접 기술</li>
+						</ul>
+					</li>
+					<li>dir : 디렉토리 내용 표시
+						<ul>
+							<li>대체 수단 : ul 요소 사용</li>
+						</ul>
+					</li>
+					<li>marquee : 문자를 스크롤
+						<ul>
+							<li>대체 수단 : CSS 사용</li>
+						</ul>
+					</li>
+					<li>blink : 문자를 점멸
+						<ul>
+							<li>대체 수단 : CSS 사용</li>
+						</ul>
+					</li>
+					<li>bgsound : 배경음 삽입
+						<ul>
+							<li>대체 수단 : audio 요소를 대신 사용</li>
+						</ul>
+					</li>
+				</ul>
                 <h3>HTML5에 의미가 변경된 태그</h3>
+                <div class="table">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>&lt;a&gt;</th>
+                                <td>&lt;a&gt; 태그는 HTML4에서는 href="#" 또는 href="javascript:;"로 지정해야 널 링크로 사용할 수 있었지만 HTML5에서는 href 속성 없이 사용해도 널 링크로 사용 가능</td>
+                            </tr>
+                            <tr>
+                                <th>&lt;address&gt;</th>
+                                <td>&lt;address&gt; 태그는 HTML4에서는 이름이나 이메일 주소, 전화번호 등 제작자에 대한 정보를 표시할 때 사용하였지만, HTML5에서는 실제 우편물 주소를 표시</td>
+                            </tr>
+                            <tr>
+                                <th>&lt;b&gt;</th>
+                                <td>&lt;b&gt; 태그는 HTML4에서는 텍스트를 진하게 표시할 때 사용하였지만, HTML5에서는 텍스트를 진하게 표시할뿐 아니라, 제품 소개서 안의 제품명, 요약문서 안의 키워드처럼 특별하게 중요하지는 않지만 진하게 표시하려고 할 때 사용</td>
+                            </tr>
+                            <tr>
+                                <th>&lt;hr&gt;</th>
+                                <td>&lt;hr&gt; 태그는 HTML4에서는 가로줄을 표시할 때 사용하였지만, HTML5에서는 단락 단위로 주제를 바꾸려고 할 때 사용</td>
+                            </tr>
+                            <tr>
+                                <th>&lt;i&gt;</th>
+                                <td>&lt;i&gt; 태그는 HTML4에서는 텍스트를 기울어지게 표시할 때 사용하였지만, HTML5에서는 텍스트를 기울어지게 표시할 뿐 아니라, 중요한 정보가 들어 있지 않은 주변 콘텐츠로부터 텍스트를 따로 표시할 때 사용</td>
+                            </tr>
+                            <tr>
+                                <th>&lt;menu&gt;</th>
+                                <td>&lt;menu&gt; 태그는 HTML4에서는 <menu>태그를 사용하지 않도록 권고하였으나, HTML5에서는 실제 문서 메뉴 정보를 제공하는데 사용</td>
+                            </tr>
+                            <tr>
+                                <th>&lt;small&gt;</th>
+                                <td>&lt;small&gt; 태그는 HTML4에서는 작은 글자로 표시할 때 사용하였지만, HTML5에서는 세부 주석이나 법적 인쇄문서에서 작은 인쇄 정보를 표시할 때 사용</td>
+                            </tr>
+                            <tr>
+                                <th>&lt;strong&gt;</th>
+                                <td>&lt;strong&gt; 태그는 HTML4에서는 글자를 강조할 때 사용하였지만, HTML5에서는 단순히 진하게 표시하는 것보다 중요한 정보를 표시할 때 사용</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
         <!-- //refer -->

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,24 +11,62 @@
             margin: 0;
             padding: 0;
         }
+
+        body {
+            background-color: #e1f5fe;
+        }
+
         #main {
             width: 1200px;
+            margin: 0 auto;
         }
+
         #header {
             width: 1200px;
             height: 100px;
             background-color: #b3e5fc;
         }
+
         #nav {
             width: 1200px;
             height: 100px;
             background-color: #81d4fa;
         }
+
         #contents {
             width: 1200px;
+            display: flex;
+        }
+
+        #contents .aside {
+            width: 400px;
             height: 780px;
             background-color: #4fc3f7;
         }
+
+        #contents .content {
+            width: 800px;
+            height: 780px;
+        }
+
+        #contents .content .article1 {
+            width: 800px;
+            height: 260px;
+            background-color: #29b6f6;
+        }
+
+        #contents .content .article2 {
+            width: 800px;
+            height: 260px;
+            background-color: #03a9f4;
+        }
+
+        #contents .content .article3 {
+            width: 800px;
+            height: 260px;
+            background-color: #039be5;
+        }
+
         #footer {
             width: 1200px;
             height: 100px;
@@ -35,15 +74,24 @@
         }
     </style>
 </head>
+
 <body>
 
     <!-- 시멘틱(의미가 부여된) 태그 -> 웹접근성 향상 -> 웹 표준을 준수 -->
     <main id="main">
         <header id="header"></header>
         <nav id="nav"></nav>
-        <section id="contents"></section>
+        <section id="contents">
+            <aside class="aside"></aside>
+            <section class="content">
+                <article class="article1"></article>
+                <article class="article2"></article>
+                <article class="article3"></article>
+            </section>
+        </section>
         <footer id="footer"></footer>
     </main>
 
 </body>
+
 </html>
