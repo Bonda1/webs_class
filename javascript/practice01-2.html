@@ -22,7 +22,7 @@
             <h2>1. 구구단 출력하기</h2>
 
             <!-- 01 -->
-            <h3>1.1 1단부터 9단까지 출력하시오!</h3>
+            <h3>1.1 for문을 이용하여 2단부터 9단까지 출력하시오!</h3>
 
             <div class="code">
 <pre class="line-numbers"><code class="language-js">{
@@ -67,17 +67,25 @@
 
 
         //for문을 이용해서 구구단 출력
-        for(let i=2; i<=9; i++){
-            document.write("<br>");
+        // for(let i=2; i<=9; i++){
+        //     document.write("<br>");
 
-            for(let j=1; j<=9; j++){
-                let sum = i * j;
-                document.write( i + " * " + j + " = " + sum, "<br>");
-            }
-        }
+        //     for(let j=1; j<=9; j++){
+        //         let sum = i * j;
+        //         document.write( i + " * " + j + " = " + sum, "<br>");
+        //     }
+        // }
 
         //숙제
         //while문을 이용해서 구구단 출력
+        {
+            let num = 2;
+
+            while(num <= 9){
+                document.write(num + 2 + " * " + 2 + " sum " + 2);
+                num++
+            }
+        }
     </script>
 </body>
 </html>
