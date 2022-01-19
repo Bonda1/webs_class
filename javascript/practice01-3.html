@@ -47,7 +47,7 @@
         table += "&lt;/tr&gt;";
     }
 
-        table += "&lt;/table&gt;";
+    table += "&lt;/table&gt;";
 }</code></pre>
             </div>
             <div class="result01"></div>
@@ -59,7 +59,18 @@
 
             <div class="code">
 <pre class="line-numbers"><code class="language-js">{
+    let num = 1;
+    let table = "&lt;table&gt;";
 
+    for(let i=1; i&lt;=5; i++){
+        table += "&lt;tr&gt;";
+            for(let j=1; j&lt;=5; j++){
+                table += "&lt;td&gt;"+ num +"&lt;/td&gt;";
+                num++;
+            }
+        table += "&lt;/tr&gt;";
+    }
+    table += "&lt;/table&gt;";
 }</code></pre>
             </div>
             <div class="result02"></div>
