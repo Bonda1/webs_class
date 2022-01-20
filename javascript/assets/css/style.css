@@ -138,6 +138,11 @@ img {
     padding: 8px 20px 6px 20px;
 }
 
+#header nav ul:nth-child(4) li a {
+    font-size: 14px;
+    padding: 8px 20px 6px 20px;
+}
+
 #header nav ul li.active a {
     background: #000;
     color: #fff;
@@ -279,6 +284,7 @@ img {
 .script .sample .view>div.selected2 img {
     opacity: 0.3;
 }
+
 /* 내가 사용한 코드 위 */
 .script .sample .view>div img {
     border-radius: 1em;
@@ -449,13 +455,16 @@ img {
     line-height: 1.4;
     display: none;
 }
+
 .result.active h4 {
     border-radius: 5px 5px 0 0;
 }
-.result.active > div {
+
+.result.active>div {
     display: block;
     border-radius: 0 0 5px 5px;
 }
+
 @media (max-width: 800px) {
     .result h4 {
         font-size: 14px;
