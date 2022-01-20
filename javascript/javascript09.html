@@ -107,6 +107,19 @@
 
         document.querySelector("#sample2 .view").innerText = conf;
     })
+    
+    //만약에 true이면 -> 네 준비되었습니다.
+    //만약에 false이면 -> 아직 준비 안돼었습니다.
+    const btn = document.querySelector("#sample2 .btn1");
+    btn.addEventListener('click', () => {
+        const conf = confirm("오늘 공부할 준비가 되었나요?");
+
+        if(conf == true) {
+            document.querySelector("#sample2 .view").innerText = "네 준비되었습니다.";
+        } else {
+            document.querySelector("#sample2 .view").innerText = "아직 준비 안돼었습니다.";
+        }
+    })
 }</code></pre>
                 </div>
             </div>
@@ -150,17 +163,27 @@
 
         //02
         {
-            const btn = document.querySelector("#sample2 .btn1");
+            // const btn = document.querySelector("#sample2 .btn1");
             
-            btn.addEventListener("click", () => {
-                const conf = confirm("오늘 공부할 준비가 되었나요?");
+            // btn.addEventListener("click", () => {
+            //     const conf = confirm("오늘 공부할 준비가 되었나요?");
 
-                document.querySelector("#sample2 .view").innerText = conf;
-            })
+            //     document.querySelector("#sample2 .view").innerText = conf;
+            // })
 
             //숙제
             //만약에 true이면 -> 네 준비되었습니다.
-            //만약에 false이면 -> 네 아직 준비 안되었습니다.
+            //만약에 false이면 -> 아직 준비 안돼었습니다.
+            const btn = document.querySelector("#sample2 .btn1");
+            btn.addEventListener('click', () => {
+                const conf = confirm("오늘 공부할 준비가 되었나요?");
+
+                if(conf == true) {
+                    document.querySelector("#sample2 .view").innerText = "네 준비되었습니다.";
+                } else {
+                    document.querySelector("#sample2 .view").innerText = "아직 준비 안돼었습니다.";
+                }
+            })
         }
 
         //03. prompt()
