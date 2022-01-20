@@ -456,13 +456,13 @@ img {
     display: none;
 }
 
-.result.active h4 {
-    border-radius: 5px 5px 0 0;
-}
-
 .result.active>div {
     display: block;
     border-radius: 0 0 5px 5px;
+}
+
+.result.active h4 {
+    border-radius: 5px 5px 0 0;
 }
 
 @media (max-width: 800px) {
