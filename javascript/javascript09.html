@@ -100,7 +100,13 @@
                 </div>
                 <div class="code">
 <pre class="line-numbers"><code class="language-js">{
+    const btn = document.querySelector("#sample2 .btn1");
+            
+    btn.addEventListener("click", () => {
+        const conf = confirm("오늘 공부할 준비가 되었나요?");
 
+        document.querySelector("#sample2 .view").innerText = conf;
+    })
 }</code></pre>
                 </div>
             </div>
@@ -117,7 +123,13 @@
                 </div>
                 <div class="code">
 <pre class="line-numbers"><code class="language-js">{
+    const btn = document.querySelector("#sample3 .btn1");
 
+    btn.addEventListener("click", () => {
+        const conf = prompt("오늘 공부할 준비가 되었나요?");
+
+        document.querySelector("#sample3 .view").innerText = conf;
+    });
 }</code></pre>
                 </div>
             </div>
