@@ -62,7 +62,18 @@
 
             <div class="code">
 <pre class="line-numbers"><code class="language-js">{
+    let num, result;    //전역변수
 
+    document.querySelector(".btn03").addEventListener("click", () => {
+        num = prompt("출력할 구구단 숫자를 입력해주세요!!", "2");
+        //console.log(num)
+
+        for(let i=1; i&lt;=9; i++){
+            result = num + " * " + i + " = " + (num * i) + "<br>";
+            console.log(result)
+            document.querySelector(".result03").innerHTML += result;
+        }
+    });
 }</code></pre>
             </div>
             <div class="result03">
