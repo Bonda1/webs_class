@@ -57,8 +57,8 @@
                 <li>04. 리턴값 함수</li>
                 <li>05. 화살표 함수 : 선언적 함수</li>
                 <li>06. 화살표 함수 : 익명 함수</li>
-                <li>07. 화살표 함수 : 리턴값 함수</li>
-                <li>08. 화살표 함수 : 익명함수 + 매개변수 + 리턴값</li>
+                <li>07. 화살표 함수 : 매개변수</li>
+                <li>08. 화살표 함수 : 리턴값 함수</li>
                 <li>09. 화살표 함수 : 익명함수 + 매개변수 + 리턴값</li>
                 <li>10. 화살표 함수 : 익명함수 + 매개변수 + 리턴값 + 괄호 생략</li>
                 <li>11. 화살표 함수 : 익명함수 + 매개변수 + 리턴값 + 괄호 생략 + 리턴생략</li>
@@ -209,14 +209,13 @@
 
             <!-- sample7 -->
             <div id="sample7" class="sample">
-                <h3>07. 화살표 함수 : 리턴값 함수</h3>
+                <h3>07. 화살표 함수 : 매개변수 함수</h3>
                 <div class="code">
 <pre class="line-numbers"><code class="language-js">{
-    func = () => {
-        const str = "함수가 실행되었습니다.7"
-        return str;
+    func = (str) => {
+        document.write(str);
     }
-    document.write(func());
+    fucn("함수가 실행되었습니다.");
 }</code></pre>
                 </div>
                 <div class="result">
@@ -230,13 +229,14 @@
 
             <!-- sample8 -->
             <div id="sample8" class="sample">
-                <h3>08. 화살표 함수 : 익명함수 + 매개변수 + 리턴값</h3>
+                <h3>08. 화살표 함수 : 리턴값 함수</h3>
                 <div class="code">
 <pre class="line-numbers"><code class="language-js">{
-    const func = (str) => {
+    func = () => {
+        const str = "함수가 실행되었습니다.";
         return str;
-    };
-    document.write(func("함수가실행되었습니다.8"));
+    }
+    document.write(func());
 }</code></pre>
                 </div>
                 <div class="result">
@@ -273,7 +273,7 @@
                 <h3>10. 화살표 함수 : 익명함수 + 매개변수 + 리턴값 + 괄호 생략</h3>
                 <div class="code">
 <pre class="line-numbers"><code class="language-js">{
-    const func = (str) => {
+    const func = str => {
         return str;
     };
     document.write(func("함수가실행되었습니다.10"));
@@ -293,9 +293,8 @@
                 <h3>11. 화살표 함수 : 익명함수 + 매개변수 + 리턴값 + 괄호 생략 + 리턴생략</h3>
                 <div class="code">
 <pre class="line-numbers"><code class="language-js">{
-    const func = (str) => {
-        return str;
-    };
+    const func = str => str;
+    
     document.write(func("함수가실행되었습니다.11"));
 }</code></pre>
                 </div>
@@ -313,9 +312,8 @@
                 <h3>12. 화살표 함수 : 선언적함수 + 매개변수 + 리턴값 + 괄호 생략 + 리턴생략</h3>
                 <div class="code">
 <pre class="line-numbers"><code class="language-js">{
-    const func = (str) => {
-        return str;
-    };
+    func = str => str;
+    
     document.write(func("함수가실행되었습니다.12"));
 }</code></pre>
                 </div>
