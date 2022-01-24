@@ -1,10 +1,25 @@
-/* 전체 레이아웃 */
 #wrap {}
 
-/* 헤더 */
-#header {
-    background-color: #ccc;
+#header {}
+#header .logo {
+    float: left;
+    width: 20%;
+    padding: 18px 20px;
 }
-#header .logo {}
-#header .menu {}
-#header .member {}
+#header .logo .a {
+    font-size: 30px;
+
+}
+#header .logo .a em {
+    font-size: 18px;
+}
+#header .menu {
+    float: left;
+    width: 60%;
+    text-align: center;
+}
+#header .member {
+    float: right;
+    width: 20%;
+    text-align: right;
+}
