@@ -214,16 +214,13 @@
     width: 386.66px;
     height: 530px;
     margin-right: 20px;
-    background-image: url(../img/img_text@1x.jpg);
-    background-size: 100%;
+    background-color: #ccc;
+    background-image: url(../img/img_text_bg\ 1.jpg);
 }
-@media (-webkit-min-device-pixel-ratio: 1.5){
-    .itType01 .img1 {
-        background-image: url(../img/img_text_bg\ 1@2x.jpg);
-    }
-}
-@media (-webkit-min-device-pixel-ratio: 2.5){
-    .itType01 .img1 {
-    background-image: url(../img/test@3x.jpg);
-    }
+.itType01 .img2{
+    float: left;
+    width: 386.66px;
+    height: 530px;
+    background-color: #ccc;
+    background-image: url(../img/img_text_bg\ 2.jpg);
 }
