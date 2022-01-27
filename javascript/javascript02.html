@@ -336,14 +336,14 @@
 
     //map()
     num.map(function(el){
-                document.write(el);
+        document.write(el);
     });
 
     //map(element, index, array)
     num.map(function(element, index, array){
-                document.write(element);
-                document.write(index);
-                document.write(array);
+        document.write(element);
+        document.write(index);
+        document.write(array);
     });
 }</code></pre>
                 </div>
@@ -715,6 +715,31 @@
             // document.write(name1)
             // document.write(name2)
             // document.write(name3)
+        }
+
+        //16. 객체 : 데이터 불러오기 : for in
+        {
+            const obj = {
+                a: 100,
+                b: 200,
+                c: "javascript"
+            }
+
+            // for(let key in obj){
+            //     document.write(obj[key]);
+            // }
+        }
+
+        //17. 객체 : 데이터 불러오기 : map()
+        {
+            const obj = [
+                {a: 100, b: 200, c: "javascript"}
+            ]
+            obj.map(function(el){
+                document.write(el.a, "<br>");
+                document.write(el.b, "<br>");
+                document.write(el.c, "<br>");
+            });
         }
     </script>
 </body>
