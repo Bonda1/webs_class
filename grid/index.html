@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -1243,16 +1242,16 @@
             </div>
         </section>
         <!-- //sample5 -->
+
+        
+
     </div>
     <!-- //content -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
-        $("a").on("click", function(e){
+        $(".gridBtn1").on("click","a", function(e){
             e.preventDefault();
-        });
-
-        $(".gridBtn1").on("click","a", function(){
             var attrText = $(this).text();
             $(".grid1").attr("style",attrText);
 
@@ -1260,7 +1259,8 @@
             $(this).addClass("active");
         });
 
-        $(".gridBtn2").on("click","a", function(){
+        $(".gridBtn2").on("click","a", function(e){
+            e.preventDefault();
             var attrText = $(this).text();
             $(".grid2").attr("style",attrText);
 
@@ -1268,7 +1268,8 @@
             $(this).addClass("active");
         });
 
-        $(".gridBtn3").on("click","a", function(){
+        $(".gridBtn3").on("click","a", function(e){
+            e.preventDefault();
             var attrText = $(this).text();
             $(".grid3 > div").eq(0).attr("style",attrText);
 
@@ -1276,7 +1277,8 @@
             $(this).addClass("active");
         });
 
-        $(".gridBtn4").on("click","a", function(){
+        $(".gridBtn4").on("click","a", function(e){
+            e.preventDefault();
             var attrText = $(this).text();
             $(".grid4 > div").last().attr("style", attrText);
 
@@ -1284,7 +1286,8 @@
             $(this).addClass("active");
         });
 
-        $(".gridBtn5").on("click","a", function(){
+        $(".gridBtn5").on("click","a", function(e){
+            e.preventDefault();
             var attrText = $(this).text();
             $(".grid5 > div").first().attr("style", attrText);
 

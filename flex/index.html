@@ -827,7 +827,7 @@
                 <div class="main-wrap">
                     <div class="main__title">
                         <strong><a href="../index.html">라인 CSS 수업</a></strong><strong>조성현</strong>
-                    </div>
+                    </div> 
                     <div class="main__desc">
                         <div class="inner">
                             <div class="dog-wrap">
@@ -1407,39 +1407,6 @@
                 align-self:stretch;
             }
         </style>
-        <section id="sample9">
-            <div class="container">
-                <div class="sample">
-                    <div class="deco">
-                        <span></span><span></span><span></span><span></span><span></span><span></span>
-                        <span></span><span></span><span></span><span></span><span></span><span></span> 
-                        <span></span><span></span><span></span><span></span><span></span><span></span> 
-                        <span></span><span></span><span></span><span></span><span></span><span></span> 
-                    </div>
-                    <div class="sample__sub_title">
-                        <h2>align-self</h2>
-                        <p>align-self</p>
-                    </div>
-                    <div class="sample__plus">
-                        <span class="plus plus9">+</span>
-                        <span class="minus minus9">-</span>
-                    </div>
-                    <div class="sample__box">
-                        <div class="flexBox flex9">
-                            <div class="itemBox item9"></div>
-                            <div class="itemBox item9"></div>
-                            <div class="itemBox item9"></div>
-                            <div class="itemBox item9"></div>
-                        </div>
-                    </div>
-                    <div class="sample__btn flexBtn9">
-                        <a href="#" class="active">align-self: flex-start;</a>
-                        <a href="#">align-self:stretch;</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- //sample9 -->
     </div>
     <!-- //content -->
 
@@ -1512,7 +1479,8 @@
             e.preventDefault();
             $(".flex7").append("<div class='itemBox item7'></div>");
         });
-        $(".minus7").click(function(){
+        $(".minus7").click(function(e){
+            e.preventDefault();
             $(".flex7 > div:last-child").remove();
         });
 
@@ -1529,11 +1497,11 @@
             e.preventDefault();
             $(".flex8").append("<div class='itemBox item8'></div>");
         });
-        $(".minus8").click(function(){
+        $(".minus8").click(function(e){
+            e.preventDefault();
             $(".flex8 > div:last-child").remove();
         });
 
-        //
     </script>
 </body>
 </html>
