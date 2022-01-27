@@ -231,22 +231,27 @@
     width: 386.66px;
     height: 530px;
     margin-right: 20px;
-    background-image: url(../img/img_text_bg\ 1.jpg);
-    background-size: 100%;
+    background-image: url(../img/img_text_bg1.jpg);
 }
 .itType01 .img2 {
     float: left;
     width: 386.66px;
     height: 530px;
-    background-image: url(../img/img_text_bg\ 2.jpg);
+    background-image: url(../img/img_text_bg2.jpg);
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5) {
     .itType01 .img1 {
         background-image: url(../img/test@2x.jpg);
     }
+    .itType01 .img2 {
+        background-image: url(../img/text@3x.jpg);
+    }
 }
 @media (-webkit-min-device-pixel-ratio: 2.5) {
+    .itType01 .img1 {
+        background-image: url(../img/test@2x.jpg);
+    }
     .itType01 .img2 {
         background-image: url(../img/test@3x.jpg);
     }
