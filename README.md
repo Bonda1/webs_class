@@ -22,3 +22,4 @@ https://bonda1.github.io/webs_class/layout
 https://bonda1.github.io/webs_class/site/webClass/index.html
 
 ## WEBSTANDARD
+https://bonda1.github.io/webs_class/webstandard/index.html
