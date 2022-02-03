@@ -351,28 +351,55 @@
     width: 590px;
     height: 360px;
     background: url(../img/img_type01_right.jpg);
+    position: relative;
 }
 .img_type01 .img-wrap .left-cont {
     position: absolute;
     left: 20px;
     bottom: 20px;
 }
-.img_type01 .img-wrap h4 {
+.img_type01 .img-wrap .right-cont {
+    padding: 5px 10px 0 10px;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    background: #B59140;
+    opacity: 0.8;
+    width: 428px;
+    height: 143px;
+}
+.img_type01 .img-wrap .left h4 {
     font-size: 30px;
     color: #fff;
     font-weight: 500;
 }
-.img_type01 .img-wrap p {
+.img_type01 .img-wrap .left p {
     font-size: 14px;
     color: #fff;
     padding-right: 200px;
     margin-bottom: 15px;
 }
-.img_type01 .img-wrap a {
+.img_type01 .img-wrap .left a {
     background: #9a481d;
     padding: 10px 20px;
     color: #fff;
     display: inline-block;
+}
+.img_type01 .img-wrap .right h4 {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 500;
+}
+.img_type01 .img-wrap .right p {
+    font-size: 14px;
+    color: #fff;
+    padding-right: 20px;
+    margin-bottom: 15px;
+}
+.img_type01 .img-wrap .right a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: underline;
 }
 
 /* 이미지 유형02(img_type02) */
