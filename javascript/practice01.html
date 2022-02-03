@@ -96,7 +96,7 @@
             </div>
             <div class="result result">
                 <h4>결과보기</h4>
-                <div class="result3">
+                <div class="result1_3">
                     짝수<br>
                     2468101214161820222426283032343638404244464850525456586062646668707274767880828486889092949698100<br>
                     홀수<br>
@@ -109,32 +109,73 @@
             </div>
             <!-- //03 -->
 
+            <!-- 04 -->
+            <h3>1.4 for문 이용해서 1부터 100까지 합을 출력하세요!</h3>
+            
+            <div class="code">
+<pre class="line-numbers"><code class="language-js">{
+    let sum = 0;
+    for(let i=1; i&lt;=100; i++) {
+        sum = sum + i;
+    }
+    console.log(sum);
+
+    //다른 방법
+    let sum = 0;
+    for(let i=1; i&lt;=100; i++) {
+        sum += i;
+    }
+    console.log(sum);
+}</code></pre>
+            </div>
+            <div class="result result">
+                <h4>결과보기</h4>
+                <div class="result1_4">
+                    5050
+                </div>
+            </div>
+            <!-- //04 -->
+
         </div>
     </main>
     <script src="assets/js/script.js"></script>
     <script>
         {   
             // //짝수
-            for(let i=1; i<=100; i++){
-                if( i % 2 == 0 ){
-                    console.log(i);
-                }
-            }
+            // for(let i=1; i<=100; i++){
+            //     if( i % 2 == 0 ){
+            //         console.log(i);
+            //     }
+            // }
             //홀수
-            for(let i=1; i<=100; i++){
-                if( i % 2 != 0 ){
-                    console.log(i);
-                }
-            }
+            // for(let i=1; i<=100; i++){
+            //     if( i % 2 != 0 ){
+            //         console.log(i);
+            //     }
+            // }
 
             // 다른 방법1
-            for( let i=1; i<=100; i++ ){
-                if( i % 2 == 0 ) console.log(i);
-            }
+            // for( let i=1; i<=100; i++ ){
+            //     if( i % 2 == 0 ) console.log(i);
+            // }
             //다른 방법2
-            for( let i=2; i<=100; i+=2 ){
-                console.log(i);
+            // for( let i=2; i<=100; i+=2 ){
+            //     console.log(i);
+            // }
+
+            //1.4 for문 이용해서 1부터 100까지 합을 출력하세요!
+            let sum = 0;
+            for(let i=1; i<=100; i++) {
+                sum = sum + i;
             }
+            console.log(sum);
+            
+            //다른 방법
+            let sum1 = 0;
+            for(let i=1; i<=100; i++) {
+                sum1 += i;
+            }
+            console.log(sum1);
         }
     </script>
 </body>

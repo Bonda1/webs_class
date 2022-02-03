@@ -125,7 +125,7 @@
                     </table>
                 </div>
                 <div class="code">
-<pre class="line-nembers"><code class="language-js">{
+<pre class="line-numbers"><code class="language-js">{
     const arrNum = [100, 200, 300, 400, 500];
     const arrNumLength = arrNum.length;
 
@@ -187,7 +187,7 @@
                     </table>
                 </div>
                 <div class="code">
-<pre class="line-nembers"><code class="language-js">{
+<pre class="line-numbers"><code class="language-js">{
     const arrNum = [100, 200, 300, 400, 500];
 
     const text1 = arrNum.join("*");
@@ -242,7 +242,7 @@
                     </table>
                 </div>
                 <div class="code">
-<pre class="line-nembers"><code class="language-js">{
+<pre class="line-numbers"><code class="language-js">{
     const arrNum = [100, 200, 300, 400, 500];
     const arrPush = arrNum.push(600)
 
@@ -293,7 +293,7 @@
                     </table>
                 </div>
                 <div class="code">
-<pre class="line-nembers"><code class="language-js">{
+<pre class="line-numbers"><code class="language-js">{
     const arrNum = [100, 200, 300, 400, 500];
     const arrNumUnshift = arrNum.unshift(600);
 
@@ -364,7 +364,7 @@
                     </table>
                 </div>
                 <div class="code">
-<pre class="line-nembers"><code class="language-js">{
+<pre class="line-numbers"><code class="language-js">{
     const arrNum = [100, 200, 300, 400, 500]
     const arrNumReverse = arrNum.reverse();
 
@@ -423,7 +423,7 @@
                     </table>
                 </div>
                 <div class="code">
-<pre class="line-nembers"><code class="language-js">{
+<pre class="line-numbers"><code class="language-js">{
     const arrNum1 = [100, 200, 300];
     const arrNum2 = [400, 500, 600];
     const arrConcat = arrNum1.concat(arrNum2);
@@ -488,8 +488,11 @@
                     </table>
                 </div>
                 <div class="code">
-<pre class="line-nembers"><code class="language-js">{
+<pre class="line-numbers"><code class="language-js">{
+    const arrNum1 = [100, 200, 300, 400, 500];
+    const arrReduce1 = arrNum1.reduce(element => element)
 
+    
 }</code></pre>
                 </div>
             </div>
@@ -692,6 +695,19 @@
             document.querySelector(".sample07_Q1").innerHTML = "[100, 200, 300, 400, 500]";
             document.querySelector(".sample07_M1").innerHTML = "reduce(element => element)";
             document.querySelector(".sample07_R1").innerHTML = arrReduce1;
+
+            const arrNum2 = [100, 200, 300, 400, 500];
+            const arrReduce2 = arrNum2.reduce((previous, current) => previous + current);
+
+            document.querySelector(".sample07_N2").innerHTML = 2;
+            document.querySelector(".sample07_Q2").innerHTML = "[100, 200, 300, 400, 500]";
+            document.querySelector(".sample07_M2").innerHTML = "reduce((p,c) => p+c)";
+            document.querySelector(".sample07_R2").innerHTML = arrReduce2;
+
+            //arrNum2 값을 for문을 이용해서 출력해주세요!
+            for( let i=0; i<arrNum2.length; i++) {
+                document.write(arrNum2[i])
+            }
         }
     </script>
 </body>
