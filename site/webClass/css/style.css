@@ -334,21 +334,46 @@
     vertical-align: -4px;
 }
 .img_type01 .img-wrap {
-    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    
+    /* display: grid; (그리드 사용할시)
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px; */
 }
 .img_type01 .img-wrap .left {
     width: 590px;
     height: 360px;
     background: url(../img/img_type01_left.jpg);
-    float: left;
+    position: relative;
 }
 .img_type01 .img-wrap .right {
     width: 590px;
     height: 360px;
     background: url(../img/img_type01_right.jpg);
-    float: right;
 }
-
+.img_type01 .img-wrap .left-cont {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+.img_type01 .img-wrap h4 {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 500;
+}
+.img_type01 .img-wrap p {
+    font-size: 14px;
+    color: #fff;
+    padding-right: 200px;
+    margin-bottom: 15px;
+}
+.img_type01 .img-wrap a {
+    background: #9a481d;
+    padding: 10px 20px;
+    color: #fff;
+    display: inline-block;
+}
 
 /* 이미지 유형02(img_type02) */
 .img_type02 {}
