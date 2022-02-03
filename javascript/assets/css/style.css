@@ -308,12 +308,14 @@ img {
     padding: 10px 5px;
     border: 1px solid #e6e6e6;
 }
-.script .sample .table .sample01_R1 {
+.script .sample .table td[class*="_R"],
+.script .sample .table td[class*="_P"] {
     color: #fff;
     transition: all 0.2s;
     cursor: help;
 }
-.script .sample .table .sample01_R1:hover {
+.script .sample .table td[class*="_R"]:hover,
+.script .sample .table td[class*="_P"]:hover {
     color: #000;
 }
 .script .sample .btn {
@@ -361,6 +363,16 @@ img {
 
     .script .sample .code pre {
         font-size: 14px;
+    }
+    .script .sample .table {
+        overflow-x: scroll;
+    }
+    .script .sample .table table {
+        width: 700px;
+    }
+    .script .sample .table td[class*="_R"],
+    .script .sample .table td[class*="_P"] {
+        color: #000;
     }
 }
 
