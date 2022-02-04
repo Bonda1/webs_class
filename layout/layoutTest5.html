@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layoutTest5</title>
+    <style>
+        /* 웹 폰트 */
+/* 넥슨고딕Lv1 */
+@font-face {
+    font-family: 'NexonLv1Gothic';
+    font-weight: 300;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/NexonLv1Gothic/NexonLv1GothicLight.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/NexonLv1Gothic/NexonLv1GothicLight.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/NexonLv1Gothic/NexonLv1GothicLight.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/NexonLv1Gothic/NexonLv1GothicLight.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/NexonLv1Gothic/NexonLv1GothicLight.ttf') format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NexonLv1Gothic';
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/NexonLv1Gothic/NexonLv1GothicRegular.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/NexonLv1Gothic/NexonLv1GothicRegular.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/NexonLv1Gothic/NexonLv1GothicRegular.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/NexonLv1Gothic/NexonLv1GothicRegular.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/NexonLv1Gothic/NexonLv1GothicRegular.ttf') format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NexonLv1Gothic';
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/NexonLv1Gothic/NexonLv1GothicBold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/NexonLv1Gothic/NexonLv1GothicBold.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/NexonLv1Gothic/NexonLv1GothicBold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/NexonLv1Gothic/NexonLv1GothicBold.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/NexonLv1Gothic/NexonLv1GothicBold.ttf') format("truetype");
+    font-display: swap;
+}
+
+        /* 기본 셋팅 */
+        :root {
+            font-size: 16px;
+            line-height: 1.53;
+        }
+
+        /* 여백 초기화 */
+        body,
+        div,
+        dl,
+        dt,
+        ul,
+        ol,
+        li,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        pre,
+        code,
+        form,
+        fieldset,
+        legend,
+        textarea,
+        p,
+        blockquote,
+        th,
+        td,
+        input,
+        select,
+        button,
+        article,
+        aside,
+        details,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section
+        figure,
+        figcaption {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #wrap {font-family: 'NexonLv1Gothic';}
+        #header {
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #contents {}
+        #content h2 {
+            display: block;
+            width: 1120px;
+            margin: 0 auto;
+            font-size: 48px;
+            margin-top: 240px;
+        }
+        #headere .logo {
+            padding-top: 20px;
+        }
+        #header .menu {
+            padding: 50px 50px 20px 0;
+        }
+        #header .menu li {
+            display: inline;
+            list-style: none;
+            padding-right: 50px;
+        }
+        #header .menu li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        #content .cont {
+            width: 1120px;
+            display: flex;
+            margin: 0 auto;
+        }
+        #content .cont .img01 .box1 .img_tit {
+            font-size: 28px;
+            border-top: 1px solid #000;
+        }
+        #content .cont .img01 .box1 {
+            width: 548px;
+            height: 695px;
+            background: url(img/img1.jpg) no-repeat 0 100px;
+        }
+        #content .cont .img01 .box2 {
+            width: 548px;
+            height: 695px;
+            background: url(img/img2.jpg) no-repeat 0 100px;
+        }
+        #content .cont .img01 .box1 .img_tit {
+            margin-top: 110px;
+            padding-top: 38px;
+        }
+        #content .cont .img01 .box2 .img_tit {
+            margin-top: 120px;
+            padding-top: 58px;
+        }
+        #content .cont .img02 {
+            margin-left: 24px;
+            margin-top: 50px;
+            height: 2150px;
+        }
+        #content .cont .img02 .box1 {
+            width: 548px;
+            height: 695px;
+            background: url(img/img3.jpg) no-repeat 0 100px;
+        }
+        #content .cont .img02 .box2 {
+            width: 548px;
+            height: 695px;
+            background: url(img/img4.jpg) no-repeat 0 100px;
+        }
+        #content .cont .img02 .box1 .img_tit {
+            margin-top: 110px;
+            padding-top: 61px;
+        }
+        #content .cont .img02 .box2 .img_tit {
+            margin-top: 120px;
+            padding-top: 61px;
+        }
+        #footer {
+            background: #303137;
+            height: 370px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <h1 class="logo">IMFORM</h1>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="#">WORK</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="content">
+            <h2>We research new opportunities<br>that inspire success.</h2>
+            <div class="cont">
+                <div class="img01">
+                    <div class="box1">
+                        <h3 class="img_tit">스마트한 카라이프 <br> 한국타이어</h3>
+                    </div>
+                    <div class="box2">
+                        <h3 class="img_tit">나는 대만족 입니다 <br> 대만관광청 홈페이지 리뉴얼</h3>
+                    </div>
+                </div>
+                <div class="img02">
+                    <div class="box1">
+                        <h3 class="img_tit">한섬 프리미엄 스타일 <br> 모바일 룩북</h3>
+                    </div>
+                    <div class="box2">
+                        <h3 class="img_tit">세련된 감각의 까사미아 <br> 라이프스타일 매거진</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="footer"></footer>
+    </div>
+</body>
+</html>
