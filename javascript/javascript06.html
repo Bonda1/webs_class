@@ -974,7 +974,7 @@
 
             <!-- sample14 -->
             <div id="sample14" class="sample">
-                <h3>과제</h3>
+                <h3>과제1</h3>
                 <div class="table">
                     <table>
                         <colgroup>
@@ -1038,6 +1038,73 @@
                 </div>
             </div>
             <!-- //sample14 -->
+
+            <!-- sample15 -->
+            <div id="sample15" class="sample">
+                <h3>과제2</h3>
+                <div class="table">
+                    <table>
+                        <colgroup>
+                            <col style="width: 4%">
+                            <col style="width: 32%">
+                            <col style="width: 30%">
+                            <col style="width: 34%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>번호</th>
+                                <th>기본값</th>
+                                <th>메서드</th>
+                                <th>결과값</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="sample15_N1"></td>
+                                <td class="sample15_Q1"></td>
+                                <td class="sample15_M1"></td>
+                                <td class="sample15_R1"></td>
+                            </tr>
+                            <tr>
+                                <td class="sample15_N2"></td>
+                                <td class="sample15_Q2"></td>
+                                <td class="sample15_M2"></td>
+                                <td class="sample15_R2"></td>
+                            </tr>
+                            <tr>
+                                <td class="sample15_N3"></td>
+                                <td class="sample15_Q3"></td>
+                                <td class="sample15_M3"></td>
+                                <td class="sample15_R3"></td>
+                            </tr>
+                            <tr>
+                                <td class="sample15_N4"></td>
+                                <td class="sample15_Q4"></td>
+                                <td class="sample15_M4"></td>
+                                <td class="sample15_R4"></td>
+                            </tr>
+                            <tr>
+                                <td class="sample15_N5"></td>
+                                <td class="sample15_Q5"></td>
+                                <td class="sample15_M5"></td>
+                                <td class="sample15_R5"></td>
+                            </tr>
+                            <tr>
+                                <td class="sample15_N6"></td>
+                                <td class="sample15_Q6"></td>
+                                <td class="sample15_M6"></td>
+                                <td class="sample15_R6"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="code">
+<pre class="line-numbers"><code class="language-js">{
+   
+}</code></pre>
+                </div>
+            </div>
+            <!-- //sample15 -->
         </div>
         <!-- //script -->
     </main>
@@ -1576,13 +1643,21 @@
             document.querySelector(".sample14_M2").innerHTML = "slice(-5, 4)";
             document.querySelector(".sample14_R2").innerHTML = result2;
             //100, 300, 500, 700 <- 이게 출력되게 코드써주기 코드 2개이상쓰기
+            const result3 = arrBox.filter(el => el === 300);
+
+            document.querySelector(".sample14_N3").innerHTML = 3;
+            document.querySelector(".sample14_Q3").innerHTML = "[100, 200, 300, 400, 500, 600, 700]";
+            document.querySelector(".sample14_M3").innerHTML = "filter(el => el >= 300)";
+            document.querySelector(".sample14_R3").innerHTML = result3;
 
             //700 <- 이게 출력되게 코드써주기 코드 2개이상쓰기
-
-            arrBox2 = ["j", "b", "c", "d", "e"]
+            
+            // //arrBox
+            
+            // arrBox2 = ["j", "b", "c", "d", "e"]
 
             //j <- 이게 출력되게 코드써주기 코드 2개이상쓰기
-
+            
             //j c <- 이게 출력되게 코드써주기 코드 2개이상쓰기
 
             //j b c d <- 이게 출력되게 코드써주기 코드 2개이상쓰기
@@ -1590,8 +1665,6 @@
             //사이트 단계마다 캡쳐
             //https://css-speedrun.netlify.app/
             //이건 티스토리에 캡쳐본 올려주기
-            
-            //18~21 까지 영상 코딩
         }
     </script>
 </body>
