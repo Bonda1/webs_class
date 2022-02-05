@@ -96,13 +96,13 @@
                             <col style="width: 4%">
                             <col style="width: 32%">
                             <col style="width: 22%">
-                            <col style="width: 2%">
+                            <col style="width: 42%">
                         </colgroup>
                         <thead>
                             <tr>
                                 <th>번호</th>
                                 <th>기본값</th>
-                                <th>메서드</th>
+                                <th>속성</th>
                                 <th>결과값</th>
                             </tr>
                         </thead>
@@ -152,13 +152,13 @@
                             <col style="width: 4%">
                             <col style="width: 32%">
                             <col style="width: 22%">
-                            <col style="width: 2%">
+                            <col style="width: 42%">
                         </colgroup>
                         <thead>
                             <tr>
                                 <th>번호</th>
                                 <th>기본값</th>
-                                <th>속성</th>
+                                <th>메서드</th>
                                 <th>리턴값</th>
                             </tr>
                         </thead>
@@ -1464,7 +1464,7 @@
             document.querySelector(".sample11_R2").innerHTML = result2;
 
             const arrText = ["javascript", "react", "vue"];
-            const result3 = arrText.find(el => el === "javasscript");
+            const result3 = arrText.find(el => el === "javascript");
 
             document.querySelector(".sample11_N3").innerHTML = 3;
             document.querySelector(".sample11_Q3").innerHTML = "[100, 200, 300, 400, 500]";
@@ -1569,12 +1569,12 @@
             document.querySelector(".sample14_M1").innerHTML = "slice(2, 4)";
             document.querySelector(".sample14_R1").innerHTML = result;
 
-            const result1 = arrBox.slice(-2, 5);
+            const result2 = arrBox.slice(-5, 4);
             
             document.querySelector(".sample14_N2").innerHTML = 2;
             document.querySelector(".sample14_Q2").innerHTML = "[100, 200, 300, 400, 500, 600, 700]";
-            document.querySelector(".sample14_M2").innerHTML = "slice(-2, 5)";
-            document.querySelector(".sample14_R2").innerHTML = result1;
+            document.querySelector(".sample14_M2").innerHTML = "slice(-5, 4)";
+            document.querySelector(".sample14_R2").innerHTML = result2;
             //100, 300, 500, 700 <- 이게 출력되게 코드써주기 코드 2개이상쓰기
 
             //700 <- 이게 출력되게 코드써주기 코드 2개이상쓰기
