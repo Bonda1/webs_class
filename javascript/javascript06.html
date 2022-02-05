@@ -1033,7 +1033,26 @@
                 </div>
                 <div class="code">
 <pre class="line-numbers"><code class="language-js">{
-   
+    // arrBox = [100, 200, 300, 400, 500, 600, 700];
+
+    //300 400 &lt;- 이게 출력되게 코드써주기 메소드 2개이상쓰기
+    const arrBox = [100, 200, 300, 400, 500, 600, 700];
+
+    const result = arrBox.slice(2, 4);
+    
+    const result2 = arrBox.slice(-5, 4);
+    
+    //100, 300, 500, 700 &lt;- 이게 출력되게 코드써주기 메소드 2개이상쓰기
+    const result3 = arrBox.filter(function(data, index){
+        return index % 2 == 0 ? true : false;
+    });
+
+    const result4 = arrBox.splice(1,6, 300, 500, 700);
+
+    //700 &lt;- 이게 출력되게 코드써주기 메소드 2개이상쓰기
+    const result5 = arrBox.filter(el => el === 700);
+
+    const result6 = arrBox.find(el => el === 700)
 }</code></pre>
                 </div>
             </div>
@@ -1626,7 +1645,7 @@
         {
             // arrBox = [100, 200, 300, 400, 500, 600, 700];
 
-            //300 400 <- 이게 출력되게 코드써주기 코드 2개이상쓰기
+            //300 400 <- 이게 출력되게 코드써주기 메소드 2개이상쓰기
             const arrBox = [100, 200, 300, 400, 500, 600, 700];
 
             const result = arrBox.slice(2, 4);
@@ -1642,29 +1661,86 @@
             document.querySelector(".sample14_Q2").innerHTML = "[100, 200, 300, 400, 500, 600, 700]";
             document.querySelector(".sample14_M2").innerHTML = "slice(-5, 4)";
             document.querySelector(".sample14_R2").innerHTML = result2;
-            //100, 300, 500, 700 <- 이게 출력되게 코드써주기 코드 2개이상쓰기
-            const result3 = arrBox.filter(el => el === 300);
+            //100, 300, 500, 700 <- 이게 출력되게 코드써주기 메소드 2개이상쓰기
+            const result3 = arrBox.filter(function(data, index){
+                return index % 2 == 0 ? true : false;
+            });
 
             document.querySelector(".sample14_N3").innerHTML = 3;
             document.querySelector(".sample14_Q3").innerHTML = "[100, 200, 300, 400, 500, 600, 700]";
-            document.querySelector(".sample14_M3").innerHTML = "filter(el => el >= 300)";
+            document.querySelector(".sample14_M3").innerHTML = "filter(function(data, index){ return index % 2 == 0 ? true : false;})";
             document.querySelector(".sample14_R3").innerHTML = result3;
 
-            //700 <- 이게 출력되게 코드써주기 코드 2개이상쓰기
-            
-            // //arrBox
-            
+            const result4 = arrBox.splice(1,6, 300, 500, 700);
+
+            document.querySelector(".sample14_N4").innerHTML = 4;
+            document.querySelector(".sample14_Q4").innerHTML = "[100, 200, 300, 400, 500, 600, 700]";
+            document.querySelector(".sample14_M4").innerHTML = "splice(1,6, 300, 500, 700)";
+            document.querySelector(".sample14_R4").innerHTML = arrBox;
+            //700 <- 이게 출력되게 코드써주기 메소드 2개이상쓰기
+            const result5 = arrBox.filter(el => el === 700);
+
+            document.querySelector(".sample14_N5").innerHTML = 5;
+            document.querySelector(".sample14_Q5").innerHTML = "[100, 200, 300, 400, 500, 600, 700]";
+            document.querySelector(".sample14_M5").innerHTML = "filter(el => el === 700)";
+            document.querySelector(".sample14_R5").innerHTML = result5;
+
+            const result6 = arrBox.find(el => el === 700)
+
+            document.querySelector(".sample14_N6").innerHTML = 6;
+            document.querySelector(".sample14_Q6").innerHTML = "[100, 200, 300, 400, 500]";
+            document.querySelector(".sample14_M6").innerHTML = "find(el => el === 700)";
+            document.querySelector(".sample14_R6").innerHTML = result6;
+        }    
+        
+        //숙제
+        {
             // arrBox2 = ["j", "b", "c", "d", "e"]
 
             //j <- 이게 출력되게 코드써주기 코드 2개이상쓰기
-            
+            const arrBox2 = ["j", "b", "c", "d", "e"]
+
+            const result = arrBox2.slice(0,1);
+
+            document.querySelector(".sample15_N1").innerHTML = 1;
+            document.querySelector(".sample15_Q1").innerHTML = "['j', 'b', 'c', 'd', 'e']";
+            document.querySelector(".sample15_M1").innerHTML = "slice(0)";
+            document.querySelector(".sample15_R1").innerHTML = result;
+
+            const result2 = arrBox2.reduce(element => element)
+
+            document.querySelector(".sample15_N2").innerHTML = 2;
+            document.querySelector(".sample15_Q2").innerHTML = "['j', 'b', 'c', 'd', 'e']";
+            document.querySelector(".sample15_M2").innerHTML = "reduce(element => element)";
+            document.querySelector(".sample15_R2").innerHTML = result2;
             //j c <- 이게 출력되게 코드써주기 코드 2개이상쓰기
+            // const result3 = arrBox2.splice(1,4, 'c');
+            
+            // document.querySelector(".sample15_N3").innerHTML = 3;
+            // document.querySelector(".sample15_Q3").innerHTML = "['j', 'b', 'c', 'd', 'e']";
+            // document.querySelector(".sample15_M3").innerHTML = "splice(1,4, 'c')";
+            // document.querySelector(".sample15_R3").innerHTML = arrBox2;
 
+            // const result4 = arrBox2.splice(1,4, 'c');
+            
+            // document.querySelector(".sample15_N4").innerHTML = 4;
+            // document.querySelector(".sample15_Q4").innerHTML = "['j', 'b', 'c', 'd', 'e']";
+            // document.querySelector(".sample15_M4").innerHTML = "splice(1,4, 'c')";
+            // document.querySelector(".sample15_R4").innerHTML = arrBox2;
             //j b c d <- 이게 출력되게 코드써주기 코드 2개이상쓰기
+            const result5 = arrBox2.pop()
 
-            //사이트 단계마다 캡쳐
-            //https://css-speedrun.netlify.app/
-            //이건 티스토리에 캡쳐본 올려주기
+            document.querySelector(".sample15_N5").innerHTML = 5;
+            document.querySelector(".sample15_Q5").innerHTML = "[100, 300, 300, 400, 500]";
+            document.querySelector(".sample15_M5").innerHTML = "pop()";
+            document.querySelector(".sample15_R5").innerHTML = arrBox2;
+
+            const result6 = arrBox2.slice(0,4);
+
+            document.querySelector(".sample15_N6").innerHTML = 6;
+            document.querySelector(".sample15_Q6").innerHTML = "['j', 'b', 'c', 'd', 'e']";
+            document.querySelector(".sample15_M6").innerHTML = "slice(0,4)";
+            document.querySelector(".sample15_R6").innerHTML = result6;
         }
     </script>
 </body>
