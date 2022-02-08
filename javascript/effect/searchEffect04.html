@@ -233,15 +233,25 @@
         searchBox.addEventListener("keyup", () => {
             const searchWord = searchBox.value;
             //console.log(searchWord)
-
             findProp(searchWord);
         });
+
+        document.querySelectorAll(".list span").forEach(span => {
+            span.addEventListener("click", () => {
+                //클릭한 데이터 값을 가져오기
+                const listProp = span.innerText;
+                findProp(listProp);
+            })
+        })
 
         function findProp(searchWord){
             const targetData = cssProperty.find((data) => data.name === searchWord)
             
-            console.log(targetData)
-
+            //찾는 데이터가 없을 때
+            if(targetData == null) {
+                cssDesc.textContent = "해당 속성은 존재하지 않습니다. 다시 검색해 주세요!";
+                return;
+            }
             cssDesc.innerHTML = targetData.desc;
         }
     </script>
