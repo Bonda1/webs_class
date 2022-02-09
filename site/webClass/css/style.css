@@ -175,7 +175,6 @@
 }
 
 /* 배너 */
-#banner {}
 
 .img_type {
     width: 100%;
@@ -482,7 +481,6 @@
 /* 이미지 유형02(img_type02) */
 .img_type02 {
     padding: 150px 0;
-    background: #f5f5f5;
 }
 .img_type02 h3 {
     font-size: 50px;
@@ -571,3 +569,167 @@
 .img_type02 .img-wrap li:nth-child(3) {
     background-image: url(../img/img_bg3@2x.jpg);
 }
+
+
+/* 배너 유형 (banner_type01) */
+.banner_type01 {
+    background: url(../img/banner_bg.jpg) center center no-repeat;
+    padding: 150px 0;
+    text-align: center;
+    color: #fff;
+    background-size: cover;
+}
+.banner_type01 h3 {
+    font-family: 'GmarketSans';
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 65px;
+}
+.banner_type01 p {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 65px;
+}
+.banner_type01 a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: underline;
+}
+/* .banner_type01 { 내가 한 코드
+    width: 1920px;
+    height: 500px;
+}
+.container h3 {
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+    padding-top: 142px;
+}
+.container p {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    font-weight: lighter;
+    padding-top: 63px;
+}
+.container a {
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    padding-top: 74px;
+    color: #fff;
+    text-decoration: underline;
+}
+.banner_type01 {
+    background-image: url(../img/banner_bg.jpg);
+} */
+
+
+/* footer_type01 */
+.footer_type01 {
+    padding: 150px 0;
+    background: #f5f5f5;
+    font-family: 'GmarketSans';
+}
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgb(205, 205, 205);
+    margin-bottom: 50px;
+}
+.footer-menu > div {
+    width: 16%;
+}
+.footer-menu > div h3 {
+    font-weight: 500;
+    margin-bottom: 35px;
+    font-size: 20px;
+}
+.footer-menu > div li a {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.8;
+    position: relative;
+    color: rgb(96, 96, 96);
+    transition: all 0.3;
+}
+.footer-menu > div li a:hover {
+    color: rgb(0, 0, 0);
+}
+.footer-menu > div li a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 1px;
+    background: #000;
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+}
+.footer-menu > div li a:hover::before {
+    transform: scaleX(1);
+    color: #000;
+}
+.footer-rights {
+    text-align: center;
+}
+.footer-sns {
+    margin-top: 10px;
+}
+.footer-sns ul {
+    display: flex;
+    justify-content: center;
+}
+.footer-sns li a {
+    width: 30px;
+    height: 30px;
+    margin: 4px 6px;
+    display: inline-block;
+    background-image: url(../img/bg-svg.svg);
+}
+.footer-sns li:nth-child(2) a {
+    background-position: -50px 0;
+}
+.footer-sns li:nth-child(3) a {
+    background-position: -100px 0;
+}
+.footer-sns li:nth-child(4) a {
+    background-position: -150px 0;
+}
+/* footer { 내가 한 코드
+    background: #f5f5f5;
+}
+.container h2 {}
+
+.container .footer_wrap {
+    display: flex;
+    justify-content: center;
+}
+.container .footer_wrap .one h3 {
+    padding-right: 100px;
+}
+
+.container .footer_wrap .two h3 {
+    padding-right: 100px;
+}
+
+.container .footer_wrap .three h3 {
+    padding-right: 100px;
+}
+
+.container .footer_wrap .four h3 {
+    padding-right: 100px;
+}
+
+.container .footer_wrap .five h3 {
+    padding-right: 100px;
+}
+
+.container .footer_wrap .six h3 {}
+
+.container address {
+    text-align: center;
+    border-top: 1px solid #000;
+} */
