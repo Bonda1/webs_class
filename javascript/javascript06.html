@@ -1119,7 +1119,25 @@
                 </div>
                 <div class="code">
 <pre class="line-numbers"><code class="language-js">{
-   
+    // arrBox2 = ["j", "b", "c", "d", "e"]
+
+    //j - 이게 출력되게 코드써주기 코드 2개이상쓰기
+    const arrBox2 = ["j", "b", "c", "d", "e"]
+    const arrBox3 = ["j", "b", "c", "d", "e"]
+    
+    const result = arrBox2.slice(0,1);
+
+    const result2 = arrBox2.reduce(element => element)
+
+    //j c - 이게 출력되게 코드써주기 코드 2개이상쓰기
+    const result3 = arrBox2.filter(el => el == 'j' || el == 'c');
+    
+    const result4 = arrBox3.splice(1,4, "c")
+    
+    //j b c d - 이게 출력되게 코드써주기 코드 2개이상쓰기
+    const result5 = arrBox2.pop()
+
+    const result6 = arrBox2.slice(0,4);
 }</code></pre>
                 </div>
             </div>
@@ -1700,7 +1718,7 @@
             //j <- 이게 출력되게 코드써주기 코드 2개이상쓰기
             const arrBox2 = ["j", "b", "c", "d", "e"]
             const arrBox3 = ["j", "b", "c", "d", "e"]
-            const arrBox4 = ["j", "b", "c", "d", "e"]
+            
 
             const result = arrBox2.slice(0,1);
 
@@ -1717,12 +1735,12 @@
             document.querySelector(".sample15_R2").innerHTML = result2;
             //j c <- 이게 출력되게 코드써주기 코드 2개이상쓰기
             const result3 = arrBox2.filter(el => el == 'j' || el == 'c');
-            arrBox4.splice(1,4,'c');
             document.querySelector(".sample15_N3").innerHTML = 3;
             document.querySelector(".sample15_Q3").innerHTML = "['j', 'b', 'c', 'd', 'e']";
             document.querySelector(".sample15_M3").innerHTML = "filter(el => el == 'j' || el == 'c')";
             document.querySelector(".sample15_R3").innerHTML = result3;
             
+            const result4 = arrBox3.splice(1,4, "c")
             document.querySelector(".sample15_N4").innerHTML = 4;
             document.querySelector(".sample15_Q4").innerHTML = "['j', 'b', 'c', 'd', 'e']";
             document.querySelector(".sample15_M4").innerHTML = "splice(1,4,'c')";
