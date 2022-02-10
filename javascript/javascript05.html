@@ -550,6 +550,18 @@
     </main>
     <!-- script -->
     <script>
+        //#id 이동하기
+        document.querySelectorAll("a[href^='#']").forEach(el => {
+            el.addEventListener("click", (event) => {
+                event.preventDefault();
+                document.querySelector(el.getAttribute("href")).scrollIntoView({
+                    behavior: "smooth"
+                })
+            })
+        })
+
+
+
         //01. 문자열 : 문자열 결합 / 템플릿 문자열
         {
             const str1 = "자바스크립트";
@@ -811,6 +823,9 @@
             document.querySelector(".sample7_M7").innerHTML = "substr(4, 2)";
             document.querySelector(".sample7_P7").innerHTML = text7;
         }
+
+        //{8}
+        //16. 문자열 메서드 : split() : 문자열 반환 : 반환(문자열)
     </script>
 </body>
 </html>
