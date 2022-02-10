@@ -153,6 +153,21 @@
             color: #fff;
             cursor: pointer;
         }
+        .board .list li {
+            padding-right: 100px;
+            position: relative;
+        }
+        .board .list li span {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            font-size: 14px;
+            transform: translateY(-50%);
+        }
+        .board .list li span::before {
+            content: 'view : ';
+            text-transform: uppercase;
+        }
     </style>
 </head>
 <body>
@@ -175,10 +190,10 @@
 
             <!-- 검색 영역 -->
             <div class="search">
-                <span>조회수 10개 이상</span>
-                <span>조회수 20개 이상</span>
-                <span>조회수 30개 이상</span>
-                <span>조회수 40개 이상</span>
+                <span data-view="10">조회수 10개 이상</span>
+                <span data-view="20">조회수 20개 이상</span>
+                <span data-view="30">조회수 30개 이상</span>
+                <span data-view="40">조회수 40개 이상</span>
             </div>
 
             <!-- 전체 목록 갯수 -->
@@ -186,7 +201,7 @@
 
             <!-- CSS 속성 리스트 -->
             <div class="list">
-                <ul>1</ul>
+                <ul></ul>
             </div>
         </div>
     </div>
@@ -467,56 +482,85 @@
         const searchBox = document.querySelectorAll(".search span");     //알파벳 버튼들
         const cssList = document.querySelector(".list ul");    //속성 리스트
         const cssCount = document.querySelector(".count em");        //속성 갯수
-
-        //버튼을 클릭했을때 - 각각의 버튼을 클릭하면 경고창을 나올 수 있도록 작업해보기
-        // searchBox.forEach(span => {
-        //     span.addEventListener("click", () => {
-        //         alert("asd")
-        //     })
-        // });
         
-        //버튼을 클릭했을때 - 각각의 버튼을 클릭하면 경고창을 나올 수 있도록 작업해보기 다른방법
+        let listHTML = "";
+        
+        //목록 보여주기
+        function upDataList(list){
+            listHTML = "";
+            for(const data of list){
+                listHTML += `<li>${data.name} : ${data.desc} <span>${data.view}</span></li>`;
+            }
+            cssList.innerHTML = listHTML;
+        }
+        upDataList(cssProperty);
+
+        //버튼 클릭하기
         searchBox.forEach(span => {
             span.addEventListener("click", () => {
-                onClickButton()
-            })
-        });
+                const target = span.dataset.view;
+                const filterList = cssProperty.filter(data => data.view >= target)
 
-        //변수(데이터 저장+변경+추가+전역/지역),
-        //배열(순차적으로 여러개 데이터저장),
-        //객체(데이터저장(키와 값)),
-        //함수(실행문 집합체, 재활용)
+                upDataList(filterList);
+            });
+        })
 
-        // function onClickButton(){
-        //     alert("asd")
+        
+        
+        // 위에 스크립트랑 같은 것
+        // //버튼을 클릭했을때 - 각각의 버튼을 클릭하면 경고창을 나올 수 있도록 작업해보기
+        // // searchBox.forEach(span => {
+        // //     span.addEventListener("click", () => {
+        // //         alert("asd")
+        // //     })
+        // // });
+        
+        // //버튼을 클릭했을때 - 각각의 버튼을 클릭하면 경고창을 나올 수 있도록 작업해보기 다른방법
+        // searchBox.forEach(span => {
+        //     span.addEventListener("click", (event) => {
+        //         onClickButton(event)
+        //     })
+        // });
+
+        // //변수(데이터 저장+변경+추가+전역/지역),
+        // //배열(순차적으로 여러개 데이터저장),
+        // //객체(데이터저장(키와 값)),
+        // //함수(실행문 집합체, 재활용)
+
+        // // function onClickButton(){
+        // //     alert("asd")
+        // // }
+
+        // //버튼을 클릭했을 때
+        // function onClickButton(event){
+        //     const button = event.target;    //사용자가 클릭한 버튼 타겟 설정
+        //     const targetView = button.dataset.view;
+        //     const filterList = cssProperty.filter((data) => data.view >= targetView)
+            
+        //     upDataList(filterList)
         // }
 
-        //버튼을 클릭했을 때
-        function onClickButton(){
-            
-        }
+        // //CSS 리스트 출력하기
+        // function upDataList(filterList){
+        //     let list = "";
 
-        //CSS 리스트 출력하기
-        function upDataList(){
-            let list = "";
+        //     // for(let i=0; i<cssProperty.length; i++) {
+        //     //     list += "<li>"+ cssProperty[i].view +"</li>";
+        //     // }
 
-            // for(let i=0; i<cssProperty.length; i++) {
-            //     list += "<li>"+ cssProperty[i].view +"</li>";
-            // }
+        //     // cssProperty.forEach(li => {
+        //     //     list += "<li>" + li.view + "</li>";
+        //     // })
 
-            // cssProperty.forEach(li => {
-            //     list += "<li>" + li.view + "</li>";
-            // })
-
-            for(let data of cssProperty) {
-                // list += "<li>" + data.view + "</li>";
-                list += `<li>${data.name} : ${data.desc} <span>${data.view}</span></li>`;
-            }
-            
-            cssList.innerHTML = list;
-        }
-        upDataList();
-
+        //     for(let data of filterList) {
+        //         // list += "<li>" + data.view + "</li>";
+        //         list += `<li>${data.name} : ${data.desc} <span>${data.view}</span></li>`;
+                
+        //     }
+        //     //console.log(list)
+        //     cssList.innerHTML = list;
+        // }
+        // upDataList(cssProperty);
     </script>
 </body>
 </html>
