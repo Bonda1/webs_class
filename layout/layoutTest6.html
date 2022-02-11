@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layoutTest7</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- 폰트 -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap');
+        
+        /* 기본 셋팅 */
+        :root {
+            font-size: 16px;
+            line-height: 1.53;
+        }
+
+        /* 여백 초기화 */
+        body,
+        div,
+        dl,
+        dt,
+        ul,
+        ol,
+        li,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        pre,
+        code,
+        form,
+        fieldset,
+        legend,
+        textarea,
+        p,
+        blockquote,
+        th,
+        td,
+        input,
+        select,
+        button,
+        article,
+        aside,
+        details,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section
+        figure,
+        figcaption {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        .container {
+            width: 100%;
+            height: 100px;
+            margin: 0 auto;
+        }
+        #wrap {
+            width: 100%;
+            height: 4734px;
+        }
+        #header {
+            height: 100px;
+        }
+        #header .container {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 52px;
+            padding-bottom: 10px;
+        }
+        #header .logo {
+            width: 35px;
+            height: 35px;
+            background: url(../layout/img/icon.svg);
+            background-position: -50;
+            margin-right: 30px;
+            margin-left: 320px;
+        }
+        #header .logo a {
+            margin-left: 45px;
+            font-size: 30px;
+            margin-top: -5px;
+            display: inline-block;
+            text-decoration: none;
+            color: #000;
+        }
+        #header .menu ul li {
+            display: inline-block;
+            margin-right: 60px;
+        }
+        #header .menu ul li a {
+            padding-bottom: 8px;
+            text-decoration: none;
+            color: #000;
+        }
+        #header .menu li:nth-child(1) {
+            border-bottom: 2px solid #000;
+        }
+        #header .menu-right a {
+            width: 30px;
+            height: 30px;
+            background: url(../layout/img/icon.svg);
+            display: inline-block;
+            margin-left: 15px;
+        }
+        #header .menu-right .search {
+            background-position: -0px -50px;
+        }
+        #header .menu-right .basket {
+            background-position: -47px -50px;
+            padding-top:9px;
+        }
+        #header .menu-right .mine {
+            background-position: -100px -50px;
+            padding-left: 5px;
+        }
+        #banner {
+            height: 1085px;
+        }
+        #banner .box {
+            width: 1022px;
+            height: 853px;
+            background: url(../layout/img/Image.jpg) no-repeat;
+            background-size: cover;
+            float:right;
+            margin-top: 110px;
+        }
+        #banner .box .desc {
+            margin-left: -560px;
+        }
+        #banner .box h1 {
+            font-size: 80px;
+            font-weight: 600;
+            line-height: 1;
+            color: #292019;
+            margin-bottom: 55px;
+            margin-left: -5px;
+        }
+        #banner .box p {
+            width: 480px;
+            height: 232px;
+            font-size: 18px;
+            line-height: 1.56;
+            color: #72696a;
+            margin-bottom: 100px;
+        }
+        #banner .box a {
+            font-size: 16px;
+            display: inline-block;
+            margin-right: 25px;
+            text-decoration: none;
+        }
+        #banner .box a.left {
+            padding: 21px 35px 21px 35px;
+            color: #fff;
+            background-color: #c4a586
+        }
+        #banner .box a.right {
+            padding: 21px 50px 21px 50px;
+            color: #c4a586;
+            background-color: #fff;
+            border: 1px solid #c4a586;
+        }
+        #banner .box .text {
+            font-size: 16px;
+            margin-top: 100px;
+            color: #292019;
+            font-weight: 700;
+        }
+        #content01 {
+            height: 388px;
+            background: #111;
+        }
+        #content02 {
+            height: 1500px;
+            background: #222;
+        }
+        #content03 {
+            height: 900px;
+            background: #333;
+        }
+        #content04 {
+            height: 527px;
+            background: #444;
+        }
+        
+        #footer {
+            height: 236px;
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="container">
+                <div class="logo"><a href="#">MISTRIUM</a></div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">products</a></li>
+                        <li><a href="#">faqs</a></li>
+                        <li><a href="#">contact us</a></li>
+                    </ul>
+                </div>
+                <div class="menu-right">
+                    <a href="#" class="search"><span class="ir_pm"></span>
+                    <a href="#" class="basket"><span class="ir_pm"></span></a>
+                    <a href="#" class="mine"><span class="ir_pm"></span></a>
+                </div>
+            </div>
+        </header>
+        <nav id="banner">
+            <div class="box">
+                <div class="desc">
+                <h1>Modern Furniture For
+                    <br>
+                    Modern Living Style
+                </h1>
+                    <p> In unfeeling existence objection immediate repulsive on he in. Imprudence comparison uncommonly me he difficulty diminution resolution. Likewise proposal differed scarcely dwelling as on raillery.
+                        <br><br>
+                        September few dependent extremity own continued and ten prevailed attending. Early to weeks we could. Do commanded an shameless we disposing do. Indulgence ten remarkably nor are impression out. Power is lived means oh every in we quiet.
+                    </p>
+                    <a href="#" class="left">Request a Quote</a>
+                    <a href="#" class="right">Watch Video</a>
+                </div>
+                
+            </div>
+        </nav>
+        <section id="content01"></section>
+        <section id="content02"></section>
+        <section id="content03"></section>
+        <section id="content04"></section>
+        <footer id="footer"></footer>
+    </div>
+</body>
+</html>
