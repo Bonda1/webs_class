@@ -176,7 +176,7 @@
             </ul>
         </div>
         <div class="board">
-            <span class="sub"><a href="#">charAt()</a>를 이용하여 알파벳 별로 검색하기</span>
+            <span class="sub"><a href="../javascript05.html#sample6">charAt()</a>를 이용하여 알파벳 별로 검색하기</span>
             <h1><a href="searchEffect.html">CSS 속성 검색하기</a></h1>
 
             <div class="search">
@@ -494,18 +494,18 @@
 
                 cssList.forEach(el => {
                     const cssName = el.dataset.name;        //CSS 속성 값
-                    const cssType = el.dataset.type;                                        //CSS 유형 값
+                    // const cssType = el.dataset.type;        //CSS 유형 값
                     // console.log(cssName)
 
                     //알파벳 첫글자(a) == CSS 속성의 첫글자(a)
-                    if(searchWord.charAt(0) === cssName.charAt(0) || searchWord.charAt(0) === cssType.charAt(0)){
-                        el.classList.add("show");
+                    if(searchWord.charAt(0) === cssName.charAt(0) ){//|| searchWord.charAt(0) === cssType.charAt(0)){    //searWord의 첫글자와 cssName의 첫글자를 비교 //searchWord(클릭한 속성명)와 cssType(dataset으로 불러온 속성 타입)이 같은지 비교
+                        el.classList.add("show");   //같으면 el(li)에 class="show" 추가
                     } else {
-                        el.classList.remove("show");
+                        el.classList.remove("show");    //다르면 el(li)에 class="show" 제거
                     }
-                })
-            })
-        })
+                });
+            });
+        });
     </script>
 </body>
 </html>
